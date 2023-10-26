@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Каталог - категория</title>
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Redressed&display=swap" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="page-header__inner page-header__inner--top">
+          <div class="page-header__top">
+            <a href="index.html" class="logo">
+              <img src="img/logo.svg" alt>
+            </a>
+            <div class="page-header__content">
+              <div class="hcleft">
+                <div class="hdelivery">
+                  <div class="hdelivery__title">Город доставки</div>
+                  <div class="dropdown hdelivery-select-city">
+                    <a id="select-city" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Челябинск</a>
+                    <div class="dropdown__menu" aria-labelledby="select-city">
+                      Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                      <hr>
+                      <form action>
+                        <input type="text">
+                        <select>
+                          <option>Название пункта</option>
+                        </select>
+                        <textarea rows="3"></textarea>
+                        <button class="btn">Отправить эту форму</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="hcontacts">
+                  <div class="hcontacts__title">Ежедневно с 8:00 до 22:00</div>
+                  <div class="hcontacts__phone"><a href="tel:+79085714700">+7 908 571-47-00</a></div>
+                  <div class="hcontacts__infotext">Прием заказов на сайте круглосуточно</div>
+                  <div class="dropdown more-contacts">
+                    <a id="more-contacts" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Еще контакты</a>
+                    <div class="dropdown__menu" aria-labelledby="more-contacts">
+                      Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                      <hr>
+                      <form action>
+                        <input type="text">
+                        <select>
+                          <option>Название пункта</option>
+                        </select>
+                        <textarea rows="3"></textarea>
+                        <button class="btn">Отправить эту форму</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hcright">
+                <div class="hcright__feedback">
+                  <a href="#" class="btn btn--main">Заказать звонок</a>
+                </div>
+                <div class="hcright__panels">
+                  <div class="user-panel">
+                    <div class="dropdown user-panel__help">
+                      <a id="dropdown-demo-3" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Помощь</a>
+                      <div class="dropdown__menu" aria-labelledby="dropdown-demo-3">
+                        Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                        <hr>
+                        <form action>
+                          <input type="text">
+                          <select>
+                            <option>Название пункта</option>
+                          </select>
+                          <textarea rows="3"></textarea>
+                          <button class="btn">Отправить эту форму</button>
+                        </form>
+                      </div>
+                    </div>
+                    <a class="user-panel__login" href="#">Войти</a>
+                  </div>
+                  <div class="shop-panel">
+                    <a class="shop-panel__btn" href="#">
+                      <svg class="social__icon" width="32" height="32">
+                        <use xlink:href="img/sprite-svg.svg#icon-search"/>
+                      </svg>
+                    </a>
+                    <a class="shop-panel__btn shop-panel-favourites added" href="#">
+                      <svg class="social__icon" width="32" height="32">
+                        <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                      </svg>
+                      <div class="added-value"><span>1</span></div>
+                    </a>
+                    <a class="shop-panel__btn shop-panel-cart added" href="#">
+                      <svg class="social__icon" width="32" height="32">
+                        <use xlink:href="img/sprite-svg.svg#icon-cart"/>
+                      </svg>
+                      <div class="added-value"><span>100</span></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-header__inner">    
+          <div class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item active">
+                <a href="#" class="header-nav__link">Розы</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Букеты</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Корзины с цветами</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Большие букеты</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Цветы в коробках</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Воздушные шары</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Ещё</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-header__filter-group">
+            <div class="dropdown filter-dropdown">
+              <a id="dropdown-demo-3" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Цветы</a>
+              <div class="dropdown__menu" aria-labelledby="dropdown-demo-3">
+                Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                <hr>
+                <form action>
+                  <input type="text">
+                  <select>
+                    <option>Название пункта</option>
+                  </select>
+                  <textarea rows="3"></textarea>
+                  <button class="btn">Отправить эту форму</button>
+                </form>
+              </div>
+            </div>
+            <div class="dropdown filter-dropdown">
+              <a id="dropdown-demo-3" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Повод</a>
+              <div class="dropdown__menu" aria-labelledby="dropdown-demo-3">
+                Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                <hr>
+                <form action>
+                  <input type="text">
+                  <select>
+                    <option>Название пункта</option>
+                  </select>
+                  <textarea rows="3"></textarea>
+                  <button class="btn">Отправить эту форму</button>
+                </form>
+              </div>
+            </div>
+            <div class="dropdown filter-dropdown">
+              <a id="dropdown-demo-3" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Кому</a>
+              <div class="dropdown__menu" aria-labelledby="dropdown-demo-3">
+                Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                <hr>
+                <form action>
+                  <input type="text">
+                  <select>
+                    <option>Название пункта</option>
+                  </select>
+                  <textarea rows="3"></textarea>
+                  <button class="btn">Отправить эту форму</button>
+                </form>
+              </div>
+            </div>
+            <div class="dropdown filter-dropdown">
+              <a id="dropdown-demo-3" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Размер</a>
+              <div class="dropdown__menu" aria-labelledby="dropdown-demo-3">
+                Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                <hr>
+                <form action>
+                  <input type="text">
+                  <select>
+                    <option>Название пункта</option>
+                  </select>
+                  <textarea rows="3"></textarea>
+                  <button class="btn">Отправить эту форму</button>
+                </form>
+              </div>
+            </div>
+            <div class="dropdown filter-dropdown">
+              <a id="dropdown-demo-3" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Цвет</a>
+              <div class="dropdown__menu" aria-labelledby="dropdown-demo-3">
+                Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                <hr>
+                <form action>
+                  <input type="text">
+                  <select>
+                    <option>Название пункта</option>
+                  </select>
+                  <textarea rows="3"></textarea>
+                  <button class="btn">Отправить эту форму</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main role="main">
+        <section class="page-section page-section--header">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Интернет-магазин твойрозовый.рф</a></li>
+              <li class="breadcrumbs__item"><a href class="breadcrumbs__link">Каталог</a></li>
+              <li class="breadcrumbs__item"><a href class="breadcrumbs__link">Большие букеты</a></li>
+            </ul>
+            <h1 class="page-title">Большие букеты</h1>
+          </div>
+        </section>
+        <section class="page-section page-section--catalog">
+          <div class="container">
+            <div class="catalog">
+              <div class="catalog__header">
+                <div class="catalog-sort">
+                  <span class="catalog-sort__name">Сортировать по:</span>
+                  <ul class="catalog-sort__nav">
+                    <li><a href="#">цене</a></li>
+                    <li><a href="#">новизне</a></li>
+                    <li><a href="#">популярности</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog__body">
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <div class="product-card__inner">
+                      <div class="product-card__image">
+                          <img src="img/product-card-image-01.jpg" alt>
+                      </div>
+                      <div class="product-card__body">
+                          <div class="product-card__info">
+                              <div class="product-article">#1234</div>
+                              <div class="product-name">Букет #166</div>
+                          </div>
+                          <a href="#" class="add-favourites">
+                              <svg class="add-favourites__icon" width="19" height="18">
+                                  <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="product-card__footer">
+                          <div class="product-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5730&nbsp;₽</div>
+                          </div>
+                          <div class="product-card__actions">
+                              <a href="#" class="btn btn--main-outline">Заказать</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__footer">
+                <div class="catalog__more">
+                  <a href="#" class="btn more-product-btn">
+                    <span>Показать больше</span>
+                    <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="16" cy="16" r="16" fill="#FFE2F0"/>
+                      <path d="M17 23L25 16L17 9" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M25 16H7" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="catalog__pagination">
+                  <div class="pagination">
+                    <a href class="pagination__item">1</a>
+                    <span class="pagination__item pagination__item--active">2</span>
+                    <a href class="pagination__item">3</a>
+                    <a href class="pagination__item">4</a>
+                    <a href class="pagination__item">5</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- reviews section -->
+        <section class="page-section page-section--reviews">
+          <div class="container">
+            <h2 class="page-section__title">Отзывы о нас</h2>
+            <div class="tabs tabs--reviews">
+              <ul class="tabs__links" role="tablist">
+                <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation">
+                  <a href="#demo-tab-01" class="tabs__link" data-toggle="tab" role="tab">Отзывы</a>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <span data-target="#demo-tab-02" class="tabs__link" data-toggle="tab" role="tab">Яндекс</span>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <a href="#demo-tab-03" class="tabs__link" data-toggle="tab" role="tab">Google</a>
+                </li>
+              </ul>
+              <div class="tabs__content-wrapper">
+                <div class="tabs__content-item tabs__content-item--active" id="demo-tab-01" role="tabpanel">
+                  <form action class="send-reviews">
+                    <a href="#" class="btn btn--main">Оставить отзыв</a>
+                  </form>
+                  <div class="owl-carousel reviews-carousel">
+                    <div class="reviews-carousel-card">
+                      <div class="reviews-carousel-card__header"></div>
+                      <div class="reviews-carousel-card__caption">
+                        <div class="reviews-carousel-card__title">Сергей</div>
+                        <div class="reviews-carousel-card__text">
+                          <p>Большое спасибо за доставленный заказ - цветы в малой шляпной коробке! Удовольствие получили и дарящий, и даруемая)))</p>
+                        </div>
+                      </div>
+                      <div class="reviews-carousel-card__photos">
+                        <div class="photo-before">
+                          <a href="#" class="photo-before__inner">
+                            <img src="img/reviews-card-before-01.jpg" alt>
+                          </a>
+                        </div>
+                        <div class="photo-after">
+                          <a href="#" class="photo-after__inner">
+                            <img src="img/reviews-card-after-01.jpg" alt>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-carousel__more">
+                    <a href="#" class="btn more-product-btn">
+                      <span>Показать больше</span>
+                      <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#FFE2F0"/>
+                        <path d="M17 23L25 16L17 9" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M25 16H7" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="demo-tab-02" role="tabpanel">
+                  222
+                </div>
+                <div class="tabs__content-item" id="demo-tab-03" role="tabpanel">
+                  333
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- reviews section END-->
+        <section class="page-section page-section--payment-methods">
+          <div class="container">
+            <div class="payment-methods-box">
+              <h2 class="payment-methods-box__title">Способы оплаты</h2>
+              <div class="payment-methods-box__group">
+                <ul class="payment-methods-box__list">
+                  <li>
+                    <svg class="payment-methods-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewbox="0 0 32 33" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M28 27.0372H4.00004C2.52804 27.0372 1.33337 25.8425 1.33337 24.3705V8.37052C1.33337 6.89852 2.52804 5.70386 4.00004 5.70386H28C29.472 5.70386 30.6667 6.89852 30.6667 8.37052V24.3705C30.6667 25.8425 29.472 27.0372 28 27.0372Z" fill="#A05175" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M30.6667 13.7041H1.33337" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10.6666 21.704V21.6907" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6.66663 21.704V21.6907" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Банковская карта</span>
+                  </li>
+                  <li>
+                    <svg class="payment-methods-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewbox="0 0 32 33" fill="none">
+                      <path d="M7.30682 28.3706V4.37061H17.6364C20.8182 4.37061 23.3409 5.04489 25.2045 6.39346C27.0682 7.74203 28 9.76489 28 12.462C28 15.1363 27.0682 17.1477 25.2045 18.4963C23.3409 19.8449 20.8182 20.5192 17.6364 20.5192H10.375L12.8636 18.0506V28.3706H7.30682ZM12.8636 18.6335L10.375 16.1649H17.6023C19.125 16.1649 20.3068 15.8563 21.1477 15.2392C21.9886 14.5992 22.4091 13.6849 22.4091 12.4963C22.4091 11.3306 21.9886 10.4392 21.1477 9.82204C20.3068 9.20489 19.125 8.89632 17.6023 8.89632H10.375L12.8636 6.25632V18.6335ZM4 25.2849V22.4392H20.2273V25.2849H4Z" fill="#A05175"/>
+                    </svg>
+                    <span>Наличными курьеру</span>
+                  </li>
+                  <li>
+                    <svg class="payment-methods-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewbox="0 0 32 33" fill="none">
+                      <path d="M5 4.37061C5 3.81832 5.44772 3.37061 6 3.37061H26C26.5523 3.37061 27 3.81832 27 4.37061V27.1345C27 27.8779 26.2177 28.3614 25.5528 28.029L23.4292 26.9672C22.5118 26.5085 21.4236 26.5503 20.5441 27.078L17.3924 28.969C17.1087 29.1392 16.7592 29.1581 16.4588 29.0195L11.7572 26.8495C10.9595 26.4813 10.0405 26.4813 9.24282 26.8495L6.41906 28.1527C5.75644 28.4586 5 27.9746 5 27.2448V4.37061Z" fill="#A05175" stroke="#A05175" stroke-width="2"/>
+                      <path d="M10 8.37061H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M10 13.3706H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M10 18.3706H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Счёт для юр. лиц</span>
+                  </li>
+                </ul>
+                <ul class="payment-methods-box__list">
+                  <li>
+                    <div class="payment-methods-icon" style="background-image: url(img/icon-sbp.png);"></div>
+                    <span>СБП</span>
+                  </li>
+                  <li>
+                    <div class="payment-methods-icon" style="background-image: url(img/icon-yandex-pay.png);"></div>
+                    <span>Yandex Pay</span>
+                  </li>
+                  <li>
+                    <div class="payment-methods-icon" style="background-image: url(img/icon-tinkoff-pay.png);"></div>
+                    <span>Tinkoff Pay</span>
+                  </li>
+                </ul>
+              </div>
+              <p class="payment-methods-box__caption">Для защиты данных покупателя используется шифрование на транспортном уровне — TLS 1.2 и на прикладном уровне алгоритмом RSA с длиной ключа 2048 бит.</p>
+            </div>
+          </div>
+        </section>
+        <section class="page-section page-section--guarantee">
+          <div class="container">
+            <h2 class="page-section__title">Наши гарантии</h2>
+            <div class="guarantee-group">
+              <div class="guarantee-group-card">
+                <div class="guarantee-group-card__inner">
+                  <div class="guarantee-group-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewbox="0 0 40 41" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8.30164H26V9.26716H14V8.30164ZM12 9.26716V8.30164C12 7.23516 12.8954 6.37061 14 6.37061H26C27.1046 6.37061 28 7.23516 28 8.30164V9.26716L30.88 9.26716L30.9242 9.26716C31.7827 9.26714 32.4915 9.26713 33.069 9.31594C33.6701 9.36675 34.2193 9.47583 34.7319 9.74603C35.5271 10.1651 36.161 10.8269 36.5543 11.6255C36.8039 12.1323 36.9056 12.6749 36.9535 13.2816C37 13.8704 37 14.5962 37 15.4905V15.4906V15.4906V15.4909V15.5292V28.1085V28.1468V28.1471V28.1472V28.1473C37 29.0416 37 29.7674 36.9535 30.3562C36.9056 30.9629 36.8039 31.5055 36.5543 32.0123C36.161 32.8108 35.5271 33.4726 34.7319 33.8917C34.2193 34.1619 33.6701 34.271 33.069 34.3218C32.4915 34.3706 31.7827 34.3706 30.9241 34.3706H30.88L9.12 34.3706H9.07587C8.21733 34.3706 7.50849 34.3706 6.93104 34.3218C6.32985 34.271 5.78067 34.1619 5.26806 33.8917C4.47293 33.4726 3.83903 32.8108 3.4457 32.0123C3.19607 31.5055 3.09441 30.9629 3.04649 30.3562C2.99998 29.7673 2.99999 29.0413 3 28.1468V28.1085V15.5292V15.491C2.99999 14.5965 2.99998 13.8705 3.04649 13.2816C3.09441 12.6749 3.19607 12.1323 3.4457 11.6255C3.83903 10.8269 4.47293 10.1651 5.26806 9.74602C5.78067 9.47583 6.32985 9.36675 6.93104 9.31594C7.50848 9.26713 8.2173 9.26714 9.07581 9.26716H9.07582L9.12 9.26716H12ZM26 11.1982H14H9.12C8.20625 11.1982 7.58535 11.1991 7.10545 11.2396C6.63943 11.279 6.39831 11.3503 6.2264 11.4409C5.8173 11.6566 5.47212 12.0076 5.25186 12.4548C5.15271 12.6561 5.07998 12.9311 5.0407 13.4284C5.00068 13.9352 5 14.5874 5 15.5292L5 28.1085C5 29.0504 5.00068 29.7026 5.0407 30.2093C5.07998 30.7067 5.15271 30.9816 5.25186 31.1829C5.47212 31.6301 5.8173 31.9812 6.2264 32.1968C6.39831 32.2874 6.63943 32.3588 7.10545 32.3981C7.58535 32.4387 8.20625 32.4396 9.12 32.4396L30.88 32.4396C31.7938 32.4396 32.4147 32.4387 32.8946 32.3981C33.3606 32.3588 33.6017 32.2874 33.7736 32.1968C34.1827 31.9812 34.5279 31.6301 34.7481 31.1829C34.8473 30.9816 34.92 30.7067 34.9593 30.2094C34.9993 29.7026 35 29.0504 35 28.1085V15.5292C35 14.5874 34.9993 13.9352 34.9593 13.4284C34.92 12.9311 34.8473 12.6561 34.7481 12.4548C34.5279 12.0076 34.1827 11.6566 33.7736 11.4409C33.6017 11.3503 33.3606 11.279 32.8946 11.2396C32.4147 11.1991 31.7938 11.1982 30.88 11.1982L26 11.1982ZM25 21.8189C25 24.4851 22.7614 26.6465 20 26.6465C17.2386 26.6465 15 24.4851 15 21.8189C15 19.1527 17.2386 16.9913 20 16.9913C22.7614 16.9913 25 19.1527 25 21.8189ZM27 21.8189C27 25.5516 23.866 28.5775 20 28.5775C16.134 28.5775 13 25.5516 13 21.8189C13 18.0862 16.134 15.0603 20 15.0603C23.866 15.0603 27 18.0862 27 21.8189ZM30 17.9568C31.1046 17.9568 32 17.0923 32 16.0258C32 14.9593 31.1046 14.0947 30 14.0947C28.8954 14.0947 28 14.9593 28 16.0258C28 17.0923 28.8954 17.9568 30 17.9568Z" fill="#A05175"/>
+                    </svg>
+                  </div>
+                  <div class="guarantee-group-card__text">
+                    <p>Фото букета перед доставкой</p>
+                  </div>
+                </div>
+              </div>
+              <div class="guarantee-group-card">
+                <div class="guarantee-group-card__inner">
+                  <div class="guarantee-group-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewbox="0 0 40 41" fill="none">
+                      <path d="M15.3549 24.5374C15.8752 25.5282 16.9142 26.204 18.1111 26.204H21.6666C23.5076 26.204 25 24.7117 25 22.8707C25 21.0298 23.5076 19.5374 21.6666 19.5374H18.3333C16.4923 19.5374 15 18.045 15 16.204C15 14.3631 16.4923 12.8707 18.3333 12.8707H21.8888C23.0857 12.8707 24.1247 13.5465 24.645 14.5374M20 10.3707V12.8707M20 26.204V28.704M33.3333 20.3707C33.3333 28.5515 24.41 34.5014 21.1633 36.3955C20.7943 36.6108 20.6098 36.7184 20.3494 36.7742C20.1474 36.8176 19.8526 36.8176 19.6505 36.7742C19.3901 36.7184 19.2056 36.6108 18.8366 36.3955C15.5899 34.5014 6.66663 28.5515 6.66663 20.3707V12.4001C6.66663 11.0675 6.66663 10.4013 6.88456 9.82856C7.07708 9.32262 7.38993 8.87118 7.79606 8.51327C8.25578 8.10811 8.87962 7.87417 10.1273 7.4063L19.0636 4.05517C19.4101 3.92524 19.5834 3.86027 19.7616 3.83452C19.9197 3.81167 20.0802 3.81167 20.2383 3.83452C20.4165 3.86027 20.5898 3.92524 20.9363 4.05517L29.8726 7.4063C31.1203 7.87417 31.7441 8.10811 32.2039 8.51327C32.61 8.87118 32.9228 9.32262 33.1154 9.82856C33.3333 10.4013 33.3333 11.0675 33.3333 12.4001V20.3707Z" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="guarantee-group-card__text">
+                    <p>Фото букета перед доставкой</p>
+                  </div>
+                </div>
+              </div>
+              <div class="guarantee-group-card">
+                <div class="guarantee-group-card__inner">
+                  <div class="guarantee-group-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewbox="0 0 40 41" fill="none">
+                      <path d="M36.6666 17.0374H3.33331M18.3333 23.7041H9.99998M3.33331 14.0374L3.33331 26.7041C3.33331 28.5709 3.33331 29.5044 3.69662 30.2174C4.0162 30.8446 4.52614 31.3545 5.15334 31.6741C5.86638 32.0374 6.7998 32.0374 8.66665 32.0374L31.3333 32.0374C33.2002 32.0374 34.1336 32.0374 34.8466 31.6741C35.4738 31.3545 35.9838 30.8446 36.3033 30.2174C36.6666 29.5044 36.6666 28.5709 36.6666 26.7041V14.0374C36.6666 12.1706 36.6666 11.2372 36.3033 10.5241C35.9838 9.89693 35.4738 9.38699 34.8466 9.06742C34.1336 8.7041 33.2002 8.7041 31.3333 8.7041L8.66665 8.7041C6.79981 8.7041 5.86638 8.7041 5.15335 9.06741C4.52614 9.38699 4.0162 9.89693 3.69663 10.5241C3.33331 11.2372 3.33331 12.1706 3.33331 14.0374Z" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="guarantee-group-card__text">
+                    <p>Фото букета перед доставкой</p>
+                  </div>
+                </div>
+              </div>
+              <div class="guarantee-group-card">
+                <div class="guarantee-group-card__inner">
+                  <div class="guarantee-group-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewbox="0 0 40 41" fill="none">
+                      <path d="M20 12.0372H12.5C11.3949 12.0372 10.3351 11.5982 9.5537 10.8168C8.7723 10.0354 8.33331 8.97559 8.33331 7.87052C8.33331 6.76546 8.7723 5.70565 9.5537 4.92425C10.3351 4.14284 11.3949 3.70386 12.5 3.70386C18.3333 3.70386 20 12.0372 20 12.0372ZM20 12.0372H27.5C28.605 12.0372 29.6649 11.5982 30.4463 10.8168C31.2277 10.0354 31.6666 8.97559 31.6666 7.87052C31.6666 6.76546 31.2277 5.70565 30.4463 4.92425C29.6649 4.14284 28.605 3.70386 27.5 3.70386C21.6666 3.70386 20 12.0372 20 12.0372ZM20 12.0372L20 37.0372M3.33331 23.7039H36.6666M3.33331 17.3705L3.33331 31.7039C3.33331 33.5707 3.33331 34.5041 3.69662 35.2172C4.0162 35.8444 4.52614 36.3543 5.15334 36.6739C5.86638 37.0372 6.7998 37.0372 8.66665 37.0372L31.3333 37.0372C33.2002 37.0372 34.1336 37.0372 34.8466 36.6739C35.4738 36.3543 35.9838 35.8444 36.3033 35.2172C36.6666 34.5041 36.6666 33.5707 36.6666 31.7039V17.3705C36.6666 15.5037 36.6666 14.5703 36.3033 13.8572C35.9838 13.23 35.4738 12.7201 34.8466 12.4005C34.1336 12.0372 33.2002 12.0372 31.3333 12.0372L8.66665 12.0372C6.79981 12.0372 5.86638 12.0372 5.15335 12.4005C4.52614 12.7201 4.0162 13.23 3.69663 13.8572C3.33331 14.5703 3.33331 15.5037 3.33331 17.3705Z" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="guarantee-group-card__text">
+                    <p>Фото букета перед доставкой</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-section page-section--delivery">
+          <div class="container">
+            <h2 class="page-section__title">Наши доставки цветов</h2>
+            <div class="product-carousel-wrap">
+              <div class="owl-carousel product-carousel" id="product-carousel-1">
+                <img class="thumb" src="img/delivery-card-image-01.png" alt>
+                <img class="thumb" src="img/delivery-card-image-02.png" alt>
+                <img class="thumb" src="img/delivery-card-image-03.png" alt>
+                <img class="thumb" src="img/delivery-card-image-04.png" alt>
+              </div>
+              <div class="delivery-carousel-more">
+                <a href="#" class="btn more-product-btn">
+                  <span>Показать больше</span>
+                  <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="16" fill="#FFE2F0"/>
+                    <path d="M17 23L25 16L17 9" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 16H7" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contacts section -->
+        <section class="page-section page-section--contacts">
+          <div class="container">
+            <div class="contacts">
+              <div class="contacts__col-left">
+                <h2 class="contacts__title">Наши контакты</h2>
+                <ul class="contacts-list">
+                  <li class="contacts-list__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4088 17.3626L19.4968 14.4506C18.7098 13.6626 17.4318 13.6626 16.6448 14.4506L14.2298 16.8656C11.1998 15.5986 8.77179 13.1706 7.50479 10.1406L9.91979 7.72561C10.7068 6.93761 10.7068 5.66061 9.91979 4.87361L7.00779 1.96161C6.21979 1.17361 4.94279 1.17361 4.15479 1.96161L2.77079 3.34561C1.33179 4.78361 0.725787 6.84661 1.11579 8.84261C2.53279 16.1026 8.26679 21.8376 15.5278 23.2556C17.5238 23.6446 19.5868 23.0376 21.0248 21.5996L22.4088 20.2156C23.1968 19.4276 23.1968 18.1506 22.4088 17.3626Z" fill="#A05175"/>
+                    </svg>
+                    +7 908 571-47-00</li>
+                  <li class="contacts-list__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
+                      <path d="M5.95215 4.36865C3.91815 4.36865 2.32617 4.88265 2.04517 6.83764C1.95517 7.46364 2.15315 8.07965 2.60816 8.52465C2.83416 8.74565 3.07316 9.00865 3.38916 9.27465C4.18216 9.94365 5.19317 10.6956 6.13917 11.3686C8.74217 13.2186 10.7972 14.3686 12.0142 14.3686C13.2312 14.3686 15.2862 13.2186 17.8892 11.3686C18.8362 10.6956 19.8472 9.94265 20.6392 9.27465C20.9552 9.00865 21.1942 8.74665 21.4202 8.52465C21.8752 8.07965 22.0732 7.46364 21.9832 6.83764C21.7022 4.88265 20.1102 4.36865 18.0762 4.36865H5.95215ZM2.01416 10.5247V16.3686C2.01416 18.5776 3.80516 20.3686 6.01417 20.3686H18.0142C20.2232 20.3686 22.0142 18.5776 22.0142 16.3686V10.5247C21.1942 11.3037 20.2782 12.1077 18.9832 13.0246C16.1472 15.0326 13.6002 16.3686 12.0142 16.3686C10.4282 16.3686 7.88118 15.0326 5.04517 13.0246C3.74917 12.1077 2.83416 11.3037 2.01416 10.5247Z" fill="#A05175"/>
+                    </svg>
+                    rozafun-chel@yandex.ru</li>
+                  <li class="contacts-list__item">
+                    <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12.3706" r="11" fill="#A05175" stroke="#FFE2F0" stroke-width="2"/>
+                      <path d="M14 6.37061C14 5.81832 13.5523 5.37061 13 5.37061C12.4477 5.37061 12 5.81832 12 6.37061H14ZM14 13.3706V6.37061H12V13.3706H14Z" fill="#FFE2F0"/>
+                      <path d="M8 12.3706C7.44772 12.3706 7 12.8183 7 13.3706C7 13.9229 7.44772 14.3706 8 14.3706V12.3706ZM14 12.3706H8V14.3706H14V12.3706Z" fill="#FFE2F0"/>
+                    </svg>
+                    Пн-Вс 08:00-20:00</li>
+                  <li class="contacts-list__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 23.3706C12.001 23.3706 20 13.7456 20 9.62061C20 5.49561 17.333 1.37061 12.001 1.37061C6.667 1.37061 4 5.49561 4 9.62061C4 13.7456 12.001 23.3706 12.001 23.3706Z" fill="#A05175"/>
+                      <path d="M12.001 23.3706C12.001 23.3706 20 13.7456 20 9.62061C20 5.49561 17.333 1.37061 12.001 1.37061C6.667 1.37061 4 5.49561 4 9.62061C4 13.7456 12.001 23.3706 12.001 23.3706" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 12.3706C10.343 12.3706 9 11.0266 9 9.37061C9 7.71461 10.343 6.37061 12 6.37061C13.656 6.37061 15 7.71461 15 9.37061C15 11.0266 13.656 12.3706 12 12.3706Z" fill="#FFE2F0" stroke="#FFE2F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    г. Челябинск, ул. Братьев Кашириных, д. 124</li>
+                </ul>
+              </div>
+              <div class="contacts__col-right">
+                <div class="social social--contacts">
+                  <div class="social__list">
+                    <div class="social__item">
+                      <a href="#" class="social__link" target="_blank">
+                        <svg class="social__icon" width="48" height="48">
+                          <use xlink:href="img/sprite-svg.svg#social-icon-whatsapp"/>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="social__item">
+                      <a href="#" class="social__link" target="_blank">
+                        <svg class="social__icon" width="48" height="48">
+                          <use xlink:href="img/sprite-svg.svg#social-icon-email"/>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="social__item">
+                      <a href="#" class="social__link" target="_blank">
+                        <svg class="social__icon" width="48" height="48">
+                          <use xlink:href="img/sprite-svg.svg#social-icon-telegram"/>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="social__item">
+                      <a href="#" class="social__link" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewbox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <mask id="path-1-inside-1_1_6973" fill="white">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 13.3711C5.00003 9.59986 5.00003 7.71424 6.1716 6.54267C7.34318 5.37109 9.22879 5.37109 13 5.37109H18.3334C22.1046 5.37109 23.9902 5.37109 25.1618 6.54267C26.3334 7.71424 26.3334 9.59986 26.3334 13.3711V18.7044C26.3334 22.4757 26.3334 24.3613 25.1618 25.5329C23.9902 26.7044 22.1046 26.7044 18.3334 26.7044H13C9.2288 26.7044 7.34318 26.7044 6.1716 25.5329C5.00003 24.3613 5.00003 22.4757 5.00003 18.7044V13.3711ZM22 16.8711C22 20.4609 19.0899 23.3711 15.5 23.3711C11.9102 23.3711 9.00003 20.4609 9.00003 16.8711C9.00003 13.2812 11.9102 10.3711 15.5 10.3711C19.0899 10.3711 22 13.2812 22 16.8711ZM15.5 20.1211C17.295 20.1211 18.75 18.666 18.75 16.8711C18.75 15.0762 17.295 13.6211 15.5 13.6211C13.7051 13.6211 12.25 15.0762 12.25 16.8711C12.25 18.666 13.7051 20.1211 15.5 20.1211ZM21.5 11.7044C22.3285 11.7044 23 11.0329 23 10.2044C23 9.37601 22.3285 8.70444 21.5 8.70444C20.6716 8.70444 20 9.37601 20 10.2044C20 11.0329 20.6716 11.7044 21.5 11.7044Z"/>
+                          </mask>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 13.3711C5.00003 9.59986 5.00003 7.71424 6.1716 6.54267C7.34318 5.37109 9.22879 5.37109 13 5.37109H18.3334C22.1046 5.37109 23.9902 5.37109 25.1618 6.54267C26.3334 7.71424 26.3334 9.59986 26.3334 13.3711V18.7044C26.3334 22.4757 26.3334 24.3613 25.1618 25.5329C23.9902 26.7044 22.1046 26.7044 18.3334 26.7044H13C9.2288 26.7044 7.34318 26.7044 6.1716 25.5329C5.00003 24.3613 5.00003 22.4757 5.00003 18.7044V13.3711ZM22 16.8711C22 20.4609 19.0899 23.3711 15.5 23.3711C11.9102 23.3711 9.00003 20.4609 9.00003 16.8711C9.00003 13.2812 11.9102 10.3711 15.5 10.3711C19.0899 10.3711 22 13.2812 22 16.8711ZM15.5 20.1211C17.295 20.1211 18.75 18.666 18.75 16.8711C18.75 15.0762 17.295 13.6211 15.5 13.6211C13.7051 13.6211 12.25 15.0762 12.25 16.8711C12.25 18.666 13.7051 20.1211 15.5 20.1211ZM21.5 11.7044C22.3285 11.7044 23 11.0329 23 10.2044C23 9.37601 22.3285 8.70444 21.5 8.70444C20.6716 8.70444 20 9.37601 20 10.2044C20 11.0329 20.6716 11.7044 21.5 11.7044Z"/>
+                          <path d="M25.1618 6.54267L23.7476 7.95688L23.7476 7.95688L25.1618 6.54267ZM25.1618 25.5329L23.7476 24.1186L23.7476 24.1186L25.1618 25.5329ZM6.1716 25.5329L7.58582 24.1186L7.58582 24.1186L6.1716 25.5329ZM4.75739 5.12845C3.73807 6.14778 3.34058 7.40448 3.16431 8.71551C2.99578 9.96901 3.00003 11.542 3.00003 13.3711H7.00003C7.00003 11.4289 7.00428 10.1735 7.12864 9.2485C7.24527 8.38102 7.43357 8.10913 7.58582 7.95688L4.75739 5.12845ZM13 3.37109C11.171 3.37109 9.59795 3.36685 8.34445 3.53537C7.03342 3.71164 5.77671 4.10913 4.75739 5.12845L7.58582 7.95688C7.73807 7.80463 8.00996 7.61634 8.87744 7.49971C9.80245 7.37534 11.0579 7.37109 13 7.37109V3.37109ZM18.3334 3.37109H13V7.37109H18.3334V3.37109ZM26.576 5.12845C25.5567 4.10913 24.3 3.71164 22.9889 3.53537C21.7354 3.36685 20.1624 3.37109 18.3334 3.37109V7.37109C20.2755 7.37109 21.5309 7.37534 22.456 7.49971C23.3234 7.61634 23.5953 7.80463 23.7476 7.95688L26.576 5.12845ZM28.3334 13.3711C28.3334 11.542 28.3376 9.96901 28.1691 8.71551C27.9928 7.40448 27.5953 6.14778 26.576 5.12845L23.7476 7.95688C23.8998 8.10913 24.0881 8.38102 24.2048 9.2485C24.3291 10.1735 24.3334 11.4289 24.3334 13.3711H28.3334ZM28.3334 18.7044V13.3711H24.3334V18.7044H28.3334ZM26.576 26.9471C27.5953 25.9277 27.9928 24.671 28.1691 23.36C28.3376 22.1065 28.3334 20.5335 28.3334 18.7044H24.3334C24.3334 20.6466 24.3291 21.902 24.2048 22.827C24.0881 23.6945 23.8998 23.9664 23.7476 24.1186L26.576 26.9471ZM18.3334 28.7044C20.1624 28.7044 21.7354 28.7087 22.9889 28.5401C24.3 28.3639 25.5567 27.9664 26.576 26.9471L23.7476 24.1186C23.5953 24.2709 23.3234 24.4592 22.456 24.5758C21.5309 24.7002 20.2755 24.7044 18.3334 24.7044V28.7044ZM13 28.7044H18.3334V24.7044H13V28.7044ZM4.75739 26.9471C5.77671 27.9664 7.03342 28.3639 8.34445 28.5401C9.59795 28.7087 11.171 28.7044 13 28.7044V24.7044C11.0579 24.7044 9.80245 24.7002 8.87744 24.5758C8.00996 24.4592 7.73807 24.2709 7.58582 24.1186L4.75739 26.9471ZM3.00003 18.7044C3.00003 20.5335 2.99578 22.1065 3.16431 23.36C3.34058 24.671 3.73807 25.9277 4.75739 26.9471L7.58582 24.1186C7.43357 23.9664 7.24527 23.6945 7.12864 22.827C7.00428 21.902 7.00003 20.6466 7.00003 18.7044H3.00003ZM3.00003 13.3711V18.7044H7.00003V13.3711H3.00003ZM15.5 25.3711C20.1945 25.3711 24 21.5655 24 16.8711H20C20 19.3564 17.9853 21.3711 15.5 21.3711V25.3711ZM7.00003 16.8711C7.00003 21.5655 10.8056 25.3711 15.5 25.3711V21.3711C13.0147 21.3711 11 19.3564 11 16.8711H7.00003ZM15.5 8.37109C10.8056 8.37109 7.00003 12.1767 7.00003 16.8711H11C11 14.3858 13.0147 12.3711 15.5 12.3711V8.37109ZM24 16.8711C24 12.1767 20.1945 8.37109 15.5 8.37109V12.3711C17.9853 12.3711 20 14.3858 20 16.8711H24ZM16.75 16.8711C16.75 17.5615 16.1904 18.1211 15.5 18.1211V22.1211C18.3995 22.1211 20.75 19.7706 20.75 16.8711H16.75ZM15.5 15.6211C16.1904 15.6211 16.75 16.1807 16.75 16.8711H20.75C20.75 13.9716 18.3995 11.6211 15.5 11.6211V15.6211ZM14.25 16.8711C14.25 16.1807 14.8097 15.6211 15.5 15.6211V11.6211C12.6005 11.6211 10.25 13.9716 10.25 16.8711H14.25ZM15.5 18.1211C14.8097 18.1211 14.25 17.5615 14.25 16.8711H10.25C10.25 19.7706 12.6005 22.1211 15.5 22.1211V18.1211ZM21 10.2044C21 9.92829 21.2239 9.70444 21.5 9.70444V13.7044C23.433 13.7044 25 12.1374 25 10.2044H21ZM21.5 10.7044C21.2239 10.7044 21 10.4806 21 10.2044H25C25 8.27144 23.433 6.70444 21.5 6.70444V10.7044ZM22 10.2044C22 10.4806 21.7762 10.7044 21.5 10.7044V6.70444C19.567 6.70444 18 8.27144 18 10.2044H22ZM21.5 9.70444C21.7762 9.70444 22 9.9283 22 10.2044H18C18 12.1374 19.567 13.7044 21.5 13.7044V9.70444Z" mask="url(#path-1-inside-1_1_6973)"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="social__actions">
+                    <a href="#" class="btn btn--main">Написать нам</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contacts section END-->
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__row">
+            <ul class="page-footer__links">
+              <div class="page-footer__links-col">
+                <div class="page-footer__links-title">О компании</div>
+                <ul class="page-footer__links-list">
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Карта сайта</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__links-col">
+                <div class="page-footer__links-title">Цветы</div>
+                <ul class="page-footer__links-list">
+                  <li><a href="#">Альстромерии</a></li>
+                  <li><a href="#">Гвоздики</a></li>
+                  <li><a href="#">Гипсофила</a></li>
+                  <li><a href="#">Ирисы</a></li>
+                  <li><a href="#">Кустовые розы</a></li>
+                  <li><a href="#">Лилии</a></li>
+                  <li><a href="#">Орхидеи</a></li>
+                  <li><a href="#">Пионы</a></li>
+                  <li><a href="#">Ромашки</a></li>
+                  <li><a href="#">Тюльпаны</a></li>
+                  <li><a href="#">Хризантемы</a></li>
+                  <li><a href="#">Экзотические цветы</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__links-col">
+                <div class="page-footer__links-title">Личный кабинет</div>
+                <ul class="page-footer__links-list">
+                  <li><a href="#">Вход</a></li>
+                  <li><a href="#">Регистрация</a></li>
+                  <li><a href="#">Справка</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__links-col">
+                <div class="page-footer__links-title">Помощь</div>
+                <ul class="page-footer__links-list">
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Оплата</a></li>
+                  <li><a href="#">Гарантии</a></li>
+                  <li><a href="#">Корпоративным клиентам</a></li>
+                  <li><a href="#">Обработка персональных данных</a></li>
+                  <li><a href="#">Публичная оферта</a></li>
+                </ul>
+              </div>
+            </ul>
+            <div class="social">
+              <div class="social__list">
+                <div class="social__item">
+                  <a href="#" class="social__link" target="_blank">
+                    <svg class="social__icon" width="32" height="32">
+                      <use xlink:href="img/sprite-svg.svg#social-icon-whatsapp"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" class="social__link" target="_blank">
+                    <svg class="social__icon" width="32" height="32">
+                      <use xlink:href="img/sprite-svg.svg#social-icon-email"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" class="social__link" target="_blank">
+                    <svg class="social__icon" width="32" height="32">
+                      <use xlink:href="img/sprite-svg.svg#social-icon-telegram"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" class="social__link" target="_blank">
+                    <svg class="social__icon" width="32" height="33" viewbox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="path-1-inside-1_1_6973" fill="white">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 13.3711C5.00003 9.59986 5.00003 7.71424 6.1716 6.54267C7.34318 5.37109 9.22879 5.37109 13 5.37109H18.3334C22.1046 5.37109 23.9902 5.37109 25.1618 6.54267C26.3334 7.71424 26.3334 9.59986 26.3334 13.3711V18.7044C26.3334 22.4757 26.3334 24.3613 25.1618 25.5329C23.9902 26.7044 22.1046 26.7044 18.3334 26.7044H13C9.2288 26.7044 7.34318 26.7044 6.1716 25.5329C5.00003 24.3613 5.00003 22.4757 5.00003 18.7044V13.3711ZM22 16.8711C22 20.4609 19.0899 23.3711 15.5 23.3711C11.9102 23.3711 9.00003 20.4609 9.00003 16.8711C9.00003 13.2812 11.9102 10.3711 15.5 10.3711C19.0899 10.3711 22 13.2812 22 16.8711ZM15.5 20.1211C17.295 20.1211 18.75 18.666 18.75 16.8711C18.75 15.0762 17.295 13.6211 15.5 13.6211C13.7051 13.6211 12.25 15.0762 12.25 16.8711C12.25 18.666 13.7051 20.1211 15.5 20.1211ZM21.5 11.7044C22.3285 11.7044 23 11.0329 23 10.2044C23 9.37601 22.3285 8.70444 21.5 8.70444C20.6716 8.70444 20 9.37601 20 10.2044C20 11.0329 20.6716 11.7044 21.5 11.7044Z"/>
+                      </mask>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 13.3711C5.00003 9.59986 5.00003 7.71424 6.1716 6.54267C7.34318 5.37109 9.22879 5.37109 13 5.37109H18.3334C22.1046 5.37109 23.9902 5.37109 25.1618 6.54267C26.3334 7.71424 26.3334 9.59986 26.3334 13.3711V18.7044C26.3334 22.4757 26.3334 24.3613 25.1618 25.5329C23.9902 26.7044 22.1046 26.7044 18.3334 26.7044H13C9.2288 26.7044 7.34318 26.7044 6.1716 25.5329C5.00003 24.3613 5.00003 22.4757 5.00003 18.7044V13.3711ZM22 16.8711C22 20.4609 19.0899 23.3711 15.5 23.3711C11.9102 23.3711 9.00003 20.4609 9.00003 16.8711C9.00003 13.2812 11.9102 10.3711 15.5 10.3711C19.0899 10.3711 22 13.2812 22 16.8711ZM15.5 20.1211C17.295 20.1211 18.75 18.666 18.75 16.8711C18.75 15.0762 17.295 13.6211 15.5 13.6211C13.7051 13.6211 12.25 15.0762 12.25 16.8711C12.25 18.666 13.7051 20.1211 15.5 20.1211ZM21.5 11.7044C22.3285 11.7044 23 11.0329 23 10.2044C23 9.37601 22.3285 8.70444 21.5 8.70444C20.6716 8.70444 20 9.37601 20 10.2044C20 11.0329 20.6716 11.7044 21.5 11.7044Z" fill="white"/>
+                      <path d="M25.1618 6.54267L23.7476 7.95688L23.7476 7.95688L25.1618 6.54267ZM25.1618 25.5329L23.7476 24.1186L23.7476 24.1186L25.1618 25.5329ZM6.1716 25.5329L7.58582 24.1186L7.58582 24.1186L6.1716 25.5329ZM4.75739 5.12845C3.73807 6.14778 3.34058 7.40448 3.16431 8.71551C2.99578 9.96901 3.00003 11.542 3.00003 13.3711H7.00003C7.00003 11.4289 7.00428 10.1735 7.12864 9.2485C7.24527 8.38102 7.43357 8.10913 7.58582 7.95688L4.75739 5.12845ZM13 3.37109C11.171 3.37109 9.59795 3.36685 8.34445 3.53537C7.03342 3.71164 5.77671 4.10913 4.75739 5.12845L7.58582 7.95688C7.73807 7.80463 8.00996 7.61634 8.87744 7.49971C9.80245 7.37534 11.0579 7.37109 13 7.37109V3.37109ZM18.3334 3.37109H13V7.37109H18.3334V3.37109ZM26.576 5.12845C25.5567 4.10913 24.3 3.71164 22.9889 3.53537C21.7354 3.36685 20.1624 3.37109 18.3334 3.37109V7.37109C20.2755 7.37109 21.5309 7.37534 22.456 7.49971C23.3234 7.61634 23.5953 7.80463 23.7476 7.95688L26.576 5.12845ZM28.3334 13.3711C28.3334 11.542 28.3376 9.96901 28.1691 8.71551C27.9928 7.40448 27.5953 6.14778 26.576 5.12845L23.7476 7.95688C23.8998 8.10913 24.0881 8.38102 24.2048 9.2485C24.3291 10.1735 24.3334 11.4289 24.3334 13.3711H28.3334ZM28.3334 18.7044V13.3711H24.3334V18.7044H28.3334ZM26.576 26.9471C27.5953 25.9277 27.9928 24.671 28.1691 23.36C28.3376 22.1065 28.3334 20.5335 28.3334 18.7044H24.3334C24.3334 20.6466 24.3291 21.902 24.2048 22.827C24.0881 23.6945 23.8998 23.9664 23.7476 24.1186L26.576 26.9471ZM18.3334 28.7044C20.1624 28.7044 21.7354 28.7087 22.9889 28.5401C24.3 28.3639 25.5567 27.9664 26.576 26.9471L23.7476 24.1186C23.5953 24.2709 23.3234 24.4592 22.456 24.5758C21.5309 24.7002 20.2755 24.7044 18.3334 24.7044V28.7044ZM13 28.7044H18.3334V24.7044H13V28.7044ZM4.75739 26.9471C5.77671 27.9664 7.03342 28.3639 8.34445 28.5401C9.59795 28.7087 11.171 28.7044 13 28.7044V24.7044C11.0579 24.7044 9.80245 24.7002 8.87744 24.5758C8.00996 24.4592 7.73807 24.2709 7.58582 24.1186L4.75739 26.9471ZM3.00003 18.7044C3.00003 20.5335 2.99578 22.1065 3.16431 23.36C3.34058 24.671 3.73807 25.9277 4.75739 26.9471L7.58582 24.1186C7.43357 23.9664 7.24527 23.6945 7.12864 22.827C7.00428 21.902 7.00003 20.6466 7.00003 18.7044H3.00003ZM3.00003 13.3711V18.7044H7.00003V13.3711H3.00003ZM15.5 25.3711C20.1945 25.3711 24 21.5655 24 16.8711H20C20 19.3564 17.9853 21.3711 15.5 21.3711V25.3711ZM7.00003 16.8711C7.00003 21.5655 10.8056 25.3711 15.5 25.3711V21.3711C13.0147 21.3711 11 19.3564 11 16.8711H7.00003ZM15.5 8.37109C10.8056 8.37109 7.00003 12.1767 7.00003 16.8711H11C11 14.3858 13.0147 12.3711 15.5 12.3711V8.37109ZM24 16.8711C24 12.1767 20.1945 8.37109 15.5 8.37109V12.3711C17.9853 12.3711 20 14.3858 20 16.8711H24ZM16.75 16.8711C16.75 17.5615 16.1904 18.1211 15.5 18.1211V22.1211C18.3995 22.1211 20.75 19.7706 20.75 16.8711H16.75ZM15.5 15.6211C16.1904 15.6211 16.75 16.1807 16.75 16.8711H20.75C20.75 13.9716 18.3995 11.6211 15.5 11.6211V15.6211ZM14.25 16.8711C14.25 16.1807 14.8097 15.6211 15.5 15.6211V11.6211C12.6005 11.6211 10.25 13.9716 10.25 16.8711H14.25ZM15.5 18.1211C14.8097 18.1211 14.25 17.5615 14.25 16.8711H10.25C10.25 19.7706 12.6005 22.1211 15.5 22.1211V18.1211ZM21 10.2044C21 9.92829 21.2239 9.70444 21.5 9.70444V13.7044C23.433 13.7044 25 12.1374 25 10.2044H21ZM21.5 10.7044C21.2239 10.7044 21 10.4806 21 10.2044H25C25 8.27144 23.433 6.70444 21.5 6.70444V10.7044ZM22 10.2044C22 10.4806 21.7762 10.7044 21.5 10.7044V6.70444C19.567 6.70444 18 8.27144 18 10.2044H22ZM21.5 9.70444C21.7762 9.70444 22 9.9283 22 10.2044H18C18 12.1374 19.567 13.7044 21.5 13.7044V9.70444Z" fill="white" mask="url(#path-1-inside-1_1_6973)"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="social__actions">
+                <a href="#" class="btn">Написать нам</a>
+              </div>
+            </div>
+          </div>
+          <div class="page-footer__copyright">
+            <p>&copy; 2023 - твойрозовый.рф</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
