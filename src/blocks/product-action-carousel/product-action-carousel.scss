@@ -1,0 +1,21 @@
+// В этом файле должны быть стили для БЭМ-блока product-action-carousel, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.product-action-carousel {
+
+  $block-name:                &; // #{$block-name}__element
+
+  position: relative;
+
+  .owl-stage-outer {
+    border-radius: 15px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+}

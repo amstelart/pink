@@ -1,0 +1,206 @@
+// В этом файле должны быть стили для БЭМ-блока page-header, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-header {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background-color: $color-main--light;
+  padding: 0 0 15px 0;
+
+  @media (min-width: $screen-lg) {
+    padding: 40px 0 45px 0;
+  }
+
+  .logo {
+    flex-shrink: 0;
+    margin-right: 55px;
+    width: 128px;
+    height: 57px;
+
+    @media (min-width: $screen-lg) {
+      width: 274px;
+      height: 111px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-right: 75px;
+    }
+  }
+
+  &__inner {
+    @include container;
+
+    &--top {
+      background: #fff;
+      padding-top: 30px;
+      padding-bottom: 19px;
+
+      @media (min-width: $screen-lg) {
+        background: transparent;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__top {
+    display: flex;
+    @media (min-width: $screen-lg) {
+      margin-bottom: 35px;
+    }
+  }
+  
+  &__content {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
+    @media (min-width: $screen-lg) {
+      justify-content: inherit;
+    }
+
+    .hcleft {
+      display: none;
+
+      @media (min-width: $screen-lg) {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        margin-right: 54px;
+      }
+      
+      @media (min-width: $screen-xl) {
+        flex-basis: 50%;
+      }
+    }
+    .hcright {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      &__feedback {
+        display: none;
+        @media (min-width: $screen-lg) {
+          display: inline-flex;
+          order: 2;
+        }
+        @media (min-width: $screen-xl) {
+          order: 1;
+        }
+      }
+
+      &__panels {
+        order: 1;
+        margin-bottom: 18px;
+
+        .shop-panel {
+
+          @media (min-width: $screen-lg) {
+            margin-top: 18px;
+          }
+        }
+
+        .user-panel {
+          display: none;
+          @media (min-width: $screen-lg) {
+            display: inline-block;
+          }
+        }
+
+        @media (min-width: $screen-xl) {
+          order: 2;
+          margin-bottom: 0;
+        }
+      }
+      
+      @media (min-width: $screen-xl) {
+        align-items: flex-start;
+        flex-direction: row;
+        flex-basis: 50%;
+      }
+    }
+  }
+
+  &__filter-group {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
+.hdelivery {
+
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-bottom: 16px;
+  }
+}
+
+.hdelivery-select-city {
+
+  .dropdown__toggler {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: currentColor;
+  }
+}
+
+.hcontacts {
+
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-bottom: 8px;
+  }
+
+  &__phone {
+    a {
+      text-decoration: none;
+      color: #261C29;
+    }
+    font-size: 18px;
+    font-weight: 600;
+    color: #261C29;
+    margin-bottom: 3px;
+  }
+
+  &__infotext {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 10px;
+  }
+}
+
+.more-contacts {
+  margin-top: 15px;
+
+  .dropdown__toggler {
+    font-size: 14px;
+    font-weight: 400;
+    color: currentColor;
+    text-decoration: none;
+  }
+}
+
+.hcright {
+  display: flex;
+  justify-content: space-between;
+
+  &__feedback {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+.header-feedback {
+    margin-left:auto;
+}

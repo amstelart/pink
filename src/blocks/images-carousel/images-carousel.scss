@@ -1,0 +1,60 @@
+// В этом файле должны быть стили для БЭМ-блока images-carousel, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.images-carousel {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .owl-stage-outer {
+    border-radius: 15px;
+  }
+
+  &__slide {
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 52%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+
+    @media (min-width: $screen-lg) {
+      padding-bottom: 80.5%;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-bottom: 55.5%;
+    }
+
+    @media (min-width: $screen-xxl) {
+      padding-bottom: 52%;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 30px;
+    left: 102px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    padding: 16px 50px;
+    color: $color-main;
+
+    span {
+      position: relative;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 35px;
+      background: rgba(255, 255, 255, 0.80);
+      backdrop-filter: blur(10px);
+    }
+  }
+}

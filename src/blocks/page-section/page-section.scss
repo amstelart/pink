@@ -1,0 +1,297 @@
+// В этом файле должны быть стили для БЭМ-блока page-section, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-section {
+
+  $block-name:                &; // #{$block-name}__element
+
+  overflow: hidden;
+  padding: 20px 0;
+
+  &--mail-sliders {
+    padding: 60px 0 35px 0;
+  }
+
+  &--carousel {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+
+  &--contacts {
+    background-color: $color-main--light;
+    padding: 64px 0 120px 0;
+  }
+
+  &--reviews,
+  &--thumb-group,
+  &--payment-methods {
+    background-color: #fbfafb;
+  }
+
+  &--reviews {
+    margin-top: 30px;
+  }
+
+  &--faq {
+    padding-bottom: 60px;
+  }
+
+  &--thumb-group {
+    padding: 80px 0;
+  }
+
+  &--faq {
+    .faq-more {
+      text-align: center;
+    }
+  }
+
+  &--steps {
+    padding: 93px 0 60px;
+  }
+
+  &--guarantee {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  &--delivery {
+    padding-bottom: 100px;
+  }
+
+  &__title {
+    margin-top: 22px;
+    margin-bottom: 32px;
+
+    span {
+      font-size: 18px;
+      color: $color-main;
+    }
+  }
+}
+
+.main-sliders {
+
+  @include row;
+
+  &__left {
+    @include col();
+    @include col(xl, 7);
+    @include col(lg, 6);
+  }
+
+  &__right {
+    @include col();
+    @include col(xl, 5);
+    @include col(lg, 6);
+    position: relative;
+
+    .shadow-box-top {
+      position: absolute;
+      height: 130px;
+      top: 60px;
+      left: 20px;
+      right: 20px;
+      box-shadow: 0px 4px 30px 4px rgba(74, 74, 74, 0.25);
+      background: rgba(74, 74, 74, 0.12);
+      border-radius: 15px;
+    }
+
+    .shadow-box-bottom {
+      position: absolute;
+      height: 130px;
+      bottom: 40px;
+      left: 20px;
+      right: 20px;
+      box-shadow: 0px 4px 30px 4px rgba(74, 74, 74, 0.25);
+      background: rgba(74, 74, 74, 0.12);
+      border-radius: 15px;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  max-width: 1004px;
+  margin: auto;
+
+  &__col-left {
+    flex-grow: 1;
+  }
+
+  &__col-right {
+    flex-shrink: 0;
+  }
+
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    margin-bottom: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 60px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.product-carousel-wrap {
+
+}
+
+.product-carousel-more {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.thumb-group {
+
+  @include row;
+
+  &__image {
+    @include col();
+    @include col(xl, 6);
+  }
+
+  &__caption {
+    @include col();
+    @include col(xl, 6);
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 600;
+  }
+}
+
+.steps-group {
+  @include row;
+
+  &__item {
+    @include col();
+    @include col(xl, 3);
+    text-align: center;
+  }
+
+  &__item-num {
+    font-family: 'Redressed', cursive;
+    font-size: 64px;
+    color: #F178B6;
+    line-height: 1;
+
+    span {
+      border-bottom: 1px solid #F178B6;
+    }
+  }
+  &__item-text {
+    font-weight: 500;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px; /* 156.25% */
+  }
+}
+
+.guarantee-group {
+  @include row;
+}
+
+.guarantee-group-card {
+  @include col();
+  @include col(xl, 3);
+  @include col(lg, 6);
+
+  &__inner {
+    padding: 26px 32px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(135, 135, 135, 0.25);
+    box-shadow: 0px 4px 30px 4px rgba(74, 74, 74, 0.25);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: $color-main;
+    text-align: center;
+  }
+}
+
+.payment-methods-box {
+  max-width: 650px;
+  margin: auto;
+  margin-bottom: 25px;
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 65px;
+  }
+
+  &__group {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-basis: 50%;
+    max-width: 50%;
+
+    li {
+      font-size: 14px;
+      font-weight: 400;
+      span {
+        vertical-align: middle;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  &__caption {
+    color: #7D7D7D;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.payment-methods-icon {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+
+
+.delivery-carousel-more {
+  text-align: center;
+  margin-top: 60px;
+}
