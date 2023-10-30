@@ -1,0 +1,34 @@
+// В этом файле должны быть стили для БЭМ-блока product-view, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.product-view {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__merit {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  &__merit-item {
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 15px;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    svg,
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    svg {
+      margin-right: 12px;
+    }
+  }
+}

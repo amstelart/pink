@@ -9,6 +9,7 @@ $( document ).ready(function() {
     margin: 30,
     loop: true,
     center: true,
+    navText: ["<svg width='17' height='28' viewBox='0 0 17 28' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15 26L3 14L15 2' stroke='#A05175' stroke-width='3' stroke-linecap='round'/></svg>", "<svg width='17' height='28' viewBox='0 0 17 28' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M2 2L14 14L2 26' stroke='#A05175' stroke-width='3' stroke-linecap='round'/></svg>"],
     responsive : {
       0 : {
         items: 1,
@@ -41,7 +42,8 @@ $( document ).ready(function() {
     nav: true,
     margin: 30,
     loop: true,
-    center: false
+    center: false,
+    navText: ["<svg width='17' height='28' viewBox='0 0 17 28' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15 26L3 14L15 2' stroke='#A05175' stroke-width='3' stroke-linecap='round'/></svg>", "<svg width='17' height='28' viewBox='0 0 17 28' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M2 2L14 14L2 26' stroke='#A05175' stroke-width='3' stroke-linecap='round'/></svg>"]
   });
 
   $(".product-action-carousel").owlCarousel({
@@ -49,7 +51,8 @@ $( document ).ready(function() {
     nav: true,
     margin: 30,
     loop: true,
-    center: false
+    center: false,
+    navText: ["<svg width='17' height='28' viewBox='0 0 17 28' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15 26L3 14L15 2' stroke='#fff' stroke-width='3' stroke-linecap='round'/></svg>", "<svg width='17' height='28' viewBox='0 0 17 28' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M2 2L14 14L2 26' stroke='#fff' stroke-width='3' stroke-linecap='round'/></svg>"]
   });
 
   $(".reviews-carousel").owlCarousel({
@@ -57,7 +60,8 @@ $( document ).ready(function() {
     nav: true,
     margin: 30,
     loop: true,
-    center: false
+    center: false,
+    navText: ["<svg width='17' height='28' viewBox='0 0 17 28' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15 26L3 14L15 2' stroke='#A05175' stroke-width='3' stroke-linecap='round'/></svg>", "<svg width='17' height='28' viewBox='0 0 17 28' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M2 2L14 14L2 26' stroke='#A05175' stroke-width='3' stroke-linecap='round'/></svg>"]
   });
 });
 

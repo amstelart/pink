@@ -8,8 +8,31 @@
 
   display: flex;
   border-radius: 15px;
+
   &:first-child {
     margin-bottom: 18px;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: $screen-lg) and (min-width: $screen-md)  {
+      flex-direction: row;
+      margin-left: -10px;
+      margin-right: -10px;
+  
+      .product-action-card {
+        padding: 0 10px;
+        flex-basis: 50%;
+        max-width: 50%;
+        margin-bottom: 0;
+      }
+    }
+
+    // @media (min-width: $screen-lg) {
+    //   flex-direction: column;
+    // }
   }
 
   &__image {

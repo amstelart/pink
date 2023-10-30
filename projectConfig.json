@@ -74,13 +74,17 @@
     "reviews-carousel": [],
     "catalog": [],
     "sidebar-group": [],
-    "sidebar-nav": []
+    "sidebar-nav": [],
+    "product-tabs": [],
+    "product-view": [],
+    "page-cart": [],
+    "favourites-empty": [],
+    "product-carousel": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
-    "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
     "../../node_modules/nouislider/distribute/nouislider.css"
   ],
   "addCssAfter": [

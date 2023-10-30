@@ -9,8 +9,12 @@
   overflow: hidden;
   padding: 20px 0;
 
-  &--mail-sliders {
-    padding: 60px 0 35px 0;
+  &--main-sliders {
+    padding: 40px 0 35px 0;
+
+    @media (min-width: $screen-lg) {
+      padding: 60px 0 35px 0;
+    }
   }
 
   &--carousel {
@@ -20,7 +24,11 @@
 
   &--contacts {
     background-color: $color-main--light;
-    padding: 64px 0 120px 0;
+    padding: 30px 0 60px 0;
+
+    @media (min-width: $screen-md) {
+      padding: 64px 0 120px 0;
+    }
   }
 
   &--reviews,
@@ -63,10 +71,30 @@
   &__title {
     margin-top: 22px;
     margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+
+    @media (min-width: $screen-sm) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: 32px;
+      line-height: 39px;
+    }
 
     span {
-      font-size: 18px;
+      font-size: 14px;
+      font-weight: 400;
       color: $color-main;
+
+      @media (min-width: $screen-md) {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 600;
+      }
     }
   }
 }
@@ -79,6 +107,12 @@
     @include col();
     @include col(xl, 7);
     @include col(lg, 6);
+
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
   }
 
   &__right {
@@ -112,9 +146,12 @@
 }
 
 .contacts {
-  display: flex;
-  max-width: 1004px;
-  margin: auto;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    max-width: 1004px;
+    margin: auto;
+  }
 
   &__col-left {
     flex-grow: 1;
@@ -136,10 +173,10 @@
 
   &__item {
     margin-bottom: 22px;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
     position: relative;
-    padding-left: 60px;
+    padding-left: 40px;
     padding-top: 4px;
     padding-bottom: 4px;
 
@@ -147,17 +184,16 @@
       position: absolute;
       top: 0;
       left: 0;
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: 18px;
+      font-weight: 600;
+      padding-left: 60px;
     }
   }
-}
-
-.product-carousel-wrap {
-
-}
-
-.product-carousel-more {
-  text-align: center;
-  margin-top: 12px;
 }
 
 .thumb-group {
@@ -166,12 +202,18 @@
 
   &__image {
     @include col();
-    @include col(xl, 6);
+    @include col(md, 6);
+    margin-bottom: 25px;
+
+    img {
+      display: block;
+      min-width: 100%;
+    }
   }
 
   &__caption {
     @include col();
-    @include col(xl, 6);
+    @include col(md, 6);
 
     p {
       font-size: 16px;
@@ -193,7 +235,8 @@
 
   &__item {
     @include col();
-    @include col(xl, 3);
+    @include col(xs, 6);
+    @include col(md, 3);
     text-align: center;
   }
 
@@ -221,8 +264,9 @@
 
 .guarantee-group-card {
   @include col();
-  @include col(xl, 3);
-  @include col(lg, 6);
+  @include col(md, 3);
+  @include col(xs, 6);
+  margin-bottom: 20px;
 
   &__inner {
     padding: 26px 32px;
@@ -294,4 +338,40 @@
 .delivery-carousel-more {
   text-align: center;
   margin-top: 60px;
+}
+
+.favourites-sort {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 15px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      color: #B2A8B5;
+      background: #fff;
+      border: 1px solid #B2A8B5;
+      border-radius: 15px;
+      padding: 8px 20px;
+    }
+
+    &.active {
+
+      a {
+        background: #FFE2F0;
+        border-color: #FFE2F0;
+        color: #261C29;
+      }
+    }
+  }
 }

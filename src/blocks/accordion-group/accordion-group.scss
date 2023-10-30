@@ -25,12 +25,18 @@
   font-family: $font-family;
   border: none;
   display: block;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 17px;
   font-weight: 600;
-  padding: 25px 20px;
+  padding: 20px 20px;
   text-align: left;
   width: 100%;
+
+  @media (min-width: $screen-md) {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 25px 20px;
+  }
 }
 .accordion-group__accordion-btn:focus {
 
@@ -39,6 +45,14 @@
 .accordion-group__accordion-panel {
   border: none;
   padding: 0px 20px 12px 20px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+
+  @media (min-width: $screen-md) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   p {
     margin-top: 0;

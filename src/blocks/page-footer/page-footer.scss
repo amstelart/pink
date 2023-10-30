@@ -16,6 +16,7 @@
 
   &__row {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 40px;
   }
 
@@ -27,11 +28,42 @@
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__social {
+    max-width: 100%;
+    flex-basis: 100%;
+    
+    @media (min-width: $screen-sm) {
+      margin-left: auto;
+      max-width: 50%;
+      flex-basis: 50%;
+    }
+
+    @media (min-width: $screen-md) {
+      max-width: 25%;
+      flex-basis: 25%;
+    }
   }
 
   &__links-col {
-    padding-right: 30px;
+    margin-bottom: 20px;
     flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 100%;
+    
+    @media (min-width: $screen-sm) {
+      padding-right: 30px;
+      max-width: 50%;
+      flex-basis: 50%;
+    }
+
+    @media (min-width: $screen-md) {
+      max-width: 25%;
+      flex-basis: 25%;
+    }
   }
 
   &__links-title {

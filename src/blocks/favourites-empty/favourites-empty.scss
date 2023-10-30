@@ -1,0 +1,28 @@
+// В этом файле должны быть стили для БЭМ-блока favourites-empty, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.favourites-empty {
+
+  $block-name:                &; // #{$block-name}__element
+
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  padding: 30px 25px 100px 25px;
+
+  &__header  {
+
+  }
+  &__body  {
+    padding: 5px 0 15px;
+
+    svg {
+      vertical-align: middle;
+      margin: 0 5px;
+    }
+  }
+  &__actions  {
+
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Корзина Шаг-1</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main role="main" class="page-cart">
+
+        <section class="page-cart__header">
+          <div class="container">
+            <div class="page-cart__header-inner">
+              <a href="#" class="page-cart__back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M11 5L3 12L11 19" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 12H21" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Вернуться в каталог</span>
+              </a>
+              <div class="page-cart-steps">
+                <div class="page-cart-steps__item active">
+                  <div class="page-cart-steps__num">
+                    <span>1</span>
+                  </div>
+                  <div class="page-cart-steps__title">Корзина</div>
+                </div>
+                <div class="page-cart-steps__item">
+                  <div class="page-cart-steps__num">
+                    <span>2</span>
+                  </div>
+                  <div class="page-cart-steps__title">Оформление заказа</div>
+                </div>
+                <div class="page-cart-steps__item">
+                  <div class="page-cart-steps__num">
+                    <span>3</span>
+                  </div>
+                  <div class="page-cart-steps__title">Заказ создан</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-cart-layout">
+          <div class="container">
+            <div class="page-cart-layout__row">
+              <div class="page-cart-layout__main">
+                <div class="page-cart__box"></div>
+              </div>
+              <div class="page-cart-layout__sidebar">
+                <div class="page-cart__box"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

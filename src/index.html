@@ -18,26 +18,17 @@
 
       <main role="main">
 
-        <!-- <div class="container">
-          <h1>NTH start project</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sint.</p>
-          <h2>NTH start project</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sint.</p>
-          <h3>NTH start project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sint.</p>
-          <h4>NTH start project</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sint.</p>
-          <h5>NTH start project</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sint.</p>
-  
-          <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
-        </div> -->
-
-        <section class="page-section page-section--mail-sliders">
+        <section class="page-section page-section--main-sliders">
           <div class="container">
             <div class="main-sliders">
               <div class="main-sliders__left">
                 <div class="owl-carousel images-carousel" id="owl-carousel-images">
+                  <div class="images-carousel__slide" style="background-image: url(img/slide-image-01.jpg);">
+                    <div class="images-carousel__title"><span>Авторские букеты</span></div>
+                  </div>
+                  <div class="images-carousel__slide" style="background-image: url(img/slide-image-01.jpg);">
+                    <div class="images-carousel__title"><span>Авторские букеты</span></div>
+                  </div>
                   <div class="images-carousel__slide" style="background-image: url(img/slide-image-01.jpg);">
                     <div class="images-carousel__title"><span>Авторские букеты</span></div>
                   </div>
@@ -46,8 +37,114 @@
               <div class="main-sliders__right">
                 <div class="shadow-box-top"></div>
                 <div class="shadow-box-bottom"></div>
-                <div class="product-action-carousel__title">Товары и акции дня</div>
+                <div class="product-action-carousel__header">
+                  <h2 class="page-section__title">Товары и акции дня</h2>
+                </div>
                 <div class="owl-carousel product-action-carousel" id="owl-product-action-carousel">
+                  <div class="product-action-card__group">
+                    <div class="product-action-card">
+                      <div class="product-action-card__image">
+                        <img src="img/product-action-card-img-01.jpg" alt="">
+                        <div class="product-action-card__label hit"><span>Хит продаж</span></div>
+                      </div>
+                      <div class="product-action-card__body">
+                        <div class="product-action-card__body-top">
+                          <div class="product-action-card__name">Букет с альстромериями</div>
+                          <div class="product-action-card__article">#1234</div>
+                        </div>
+                        <div class="product-action-card__body-bottom">
+                          <div class="product-action-card__price">
+                            <s class="old-price"></s>
+                            <div class="current-price">5&nbsp;730&nbsp;₽</div>
+                          </div>
+                          <div class="product-action-card__actions">
+                            <a href="#" class="btn product-action-card__btn">
+                              <svg class="social__icon" width="32" height="32">
+                                <use xlink:href="img/sprite-svg.svg#icon-cart"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-action-card">
+                      <div class="product-action-card__image">
+                        <img src="img/product-action-card-img-01.jpg" alt="">
+                        <div class="product-action-card__label action"><span>Акция</span></div>
+                      </div>
+                      <div class="product-action-card__body">
+                        <div class="product-action-card__body-top">
+                          <div class="product-action-card__name">Букет с альстромериями</div>
+                          <div class="product-action-card__article">#1234</div>
+                        </div>
+                        <div class="product-action-card__body-bottom">
+                          <div class="product-action-card__price">
+                            <s class="old-price">5&nbsp;200</s>
+                            <div class="current-price">5&nbsp;730&nbsp;₽</div>
+                          </div>
+                          <div class="product-action-card__actions">
+                            <a href="#" class="btn product-action-card__btn added">
+                              <svg class="social__icon" width="32" height="32">
+                                <use xlink:href="img/sprite-svg.svg#icon-cart"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-action-card__group">
+                    <div class="product-action-card">
+                      <div class="product-action-card__image">
+                        <img src="img/product-action-card-img-01.jpg" alt="">
+                        <div class="product-action-card__label hit"><span>Хит продаж</span></div>
+                      </div>
+                      <div class="product-action-card__body">
+                        <div class="product-action-card__body-top">
+                          <div class="product-action-card__name">Букет с альстромериями</div>
+                          <div class="product-action-card__article">#1234</div>
+                        </div>
+                        <div class="product-action-card__body-bottom">
+                          <div class="product-action-card__price">
+                            <s class="old-price"></s>
+                            <div class="current-price">5&nbsp;730&nbsp;₽</div>
+                          </div>
+                          <div class="product-action-card__actions">
+                            <a href="#" class="btn product-action-card__btn">
+                              <svg class="social__icon" width="32" height="32">
+                                <use xlink:href="img/sprite-svg.svg#icon-cart"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-action-card">
+                      <div class="product-action-card__image">
+                        <img src="img/product-action-card-img-01.jpg" alt="">
+                        <div class="product-action-card__label action"><span>Акция</span></div>
+                      </div>
+                      <div class="product-action-card__body">
+                        <div class="product-action-card__body-top">
+                          <div class="product-action-card__name">Букет с альстромериями</div>
+                          <div class="product-action-card__article">#1234</div>
+                        </div>
+                        <div class="product-action-card__body-bottom">
+                          <div class="product-action-card__price">
+                            <s class="old-price">5&nbsp;200</s>
+                            <div class="current-price">5&nbsp;730&nbsp;₽</div>
+                          </div>
+                          <div class="product-action-card__actions">
+                            <a href="#" class="btn product-action-card__btn added">
+                              <svg class="social__icon" width="32" height="32">
+                                <use xlink:href="img/sprite-svg.svg#icon-cart"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="product-action-card__group">
                     <div class="product-action-card">
                       <div class="product-action-card__image">
@@ -284,6 +381,69 @@
                         </div>
                       </div>
                     </div>
+                    <div class="reviews-carousel-card">
+                      <div class="reviews-carousel-card__header"></div>
+                      <div class="reviews-carousel-card__caption">
+                        <div class="reviews-carousel-card__title">Сергей</div>
+                        <div class="reviews-carousel-card__text">
+                          <p>Большое спасибо за доставленный заказ - цветы в малой шляпной коробке! Удовольствие получили и дарящий, и даруемая)))</p>
+                        </div>
+                      </div>
+                      <div class="reviews-carousel-card__photos">
+                        <div class="photo-before">
+                          <a href="#" class="photo-before__inner">
+                            <img src="img/reviews-card-before-01.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="photo-after">
+                          <a href="#" class="photo-after__inner">
+                            <img src="img/reviews-card-after-01.jpg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviews-carousel-card">
+                      <div class="reviews-carousel-card__header"></div>
+                      <div class="reviews-carousel-card__caption">
+                        <div class="reviews-carousel-card__title">Сергей</div>
+                        <div class="reviews-carousel-card__text">
+                          <p>Большое спасибо за доставленный заказ - цветы в малой шляпной коробке! Удовольствие получили и дарящий, и даруемая)))</p>
+                        </div>
+                      </div>
+                      <div class="reviews-carousel-card__photos">
+                        <div class="photo-before">
+                          <a href="#" class="photo-before__inner">
+                            <img src="img/reviews-card-before-01.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="photo-after">
+                          <a href="#" class="photo-after__inner">
+                            <img src="img/reviews-card-after-01.jpg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviews-carousel-card">
+                      <div class="reviews-carousel-card__header"></div>
+                      <div class="reviews-carousel-card__caption">
+                        <div class="reviews-carousel-card__title">Сергей</div>
+                        <div class="reviews-carousel-card__text">
+                          <p>Большое спасибо за доставленный заказ - цветы в малой шляпной коробке! Удовольствие получили и дарящий, и даруемая)))</p>
+                        </div>
+                      </div>
+                      <div class="reviews-carousel-card__photos">
+                        <div class="photo-before">
+                          <a href="#" class="photo-before__inner">
+                            <img src="img/reviews-card-before-01.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="photo-after">
+                          <a href="#" class="photo-after__inner">
+                            <img src="img/reviews-card-after-01.jpg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="reviews-carousel__more">
                     <a href="#" class="btn more-product-btn">
@@ -432,7 +592,7 @@
                 <img class="thumb" src="img/content-image-01.jpg" alt="">
               </div>
               <div class="thumb-group__caption">
-                <h2 class="thumb-group__title">Заказать букет цветов в Челябинске с доставкой</h2>
+                <h2 class="thumb-group__title page-section__title">Заказать букет цветов в Челябинске с доставкой</h2>
                 <p>Посмотрите наш каталог. Мы делаем запоминающиеся композиции и исключительно из свежих цветов. Вы можете выбрать из имеющихся в каталоге или заказать подбор оригинального букета, который будет отвечать вкусам конкретного человека.</p>
                 <p>Мы знаем, как впечатлить даже искушенного ценителя флористики. Наши букеты оригинальны, современны, актуальны к любому празднику. А еще дарить их можно без повода. Мы предлагаем цветы со срочной доставкой по Москве – балуйте своих любимых и себя свежими ароматными букетами цветов и стильными букетами в разных форматах: в кашпо, корзине, коробке, ящички в стиле прованс. </p>
               </div>
@@ -591,6 +751,10 @@
             <h2 class="page-section__title">Наши доставки цветов</h2>
             <div class="product-carousel-wrap">
               <div class="owl-carousel product-carousel" id="product-carousel-1">
+                <img class="thumb" src="img/delivery-card-image-01.png" alt="">
+                <img class="thumb" src="img/delivery-card-image-02.png" alt="">
+                <img class="thumb" src="img/delivery-card-image-03.png" alt="">
+                <img class="thumb" src="img/delivery-card-image-04.png" alt="">
                 <img class="thumb" src="img/delivery-card-image-01.png" alt="">
                 <img class="thumb" src="img/delivery-card-image-02.png" alt="">
                 <img class="thumb" src="img/delivery-card-image-03.png" alt="">

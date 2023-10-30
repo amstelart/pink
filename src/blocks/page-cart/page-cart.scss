@@ -1,0 +1,115 @@
+// В этом файле должны быть стили для БЭМ-блока page-cart, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-cart {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 50px 0;
+
+  &__header {
+    margin-bottom: 40px;
+  }
+
+  &__header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__box {
+    background: #fff;
+    box-shadow: 0px 4px 30px 4px rgba(74, 74, 74, 0.25);
+    border-radius: 15px;
+    padding: 30px 24px
+  }
+
+  &__back-link {
+    text-decoration: none;
+    color: #A05175;
+    font-weight: 600;
+
+    svg,
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    svg {
+      margin-right: 8px;
+    }
+  }
+}
+
+.page-cart-steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &:before {
+    content: "";
+    height: 1px;
+    width: 80%;
+    background: #ECECEC;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__item {
+    padding: 0 10px;
+
+    &.active {
+      .page-cart-steps__num {
+        background: #FFE2F0;
+      }
+    }
+  }
+  
+  &__num {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 4px 20px rgba(74, 74, 74, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: $color-main;
+    margin: auto;
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-main;
+    margin-top: 16px;
+  }
+}
+
+.page-cart-layout {
+
+  &__row {
+    @include row;
+  }
+
+  &__main {
+    @include col();
+    @include col(xl, 8);
+
+    margin-bottom: 40px;
+  }
+
+  &__sidebar {
+    @include col();
+    @include col(xl, 4);
+
+    margin-bottom: 40px;
+  }
+}
