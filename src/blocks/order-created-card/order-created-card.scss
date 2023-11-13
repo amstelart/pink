@@ -1,0 +1,99 @@
+// В этом файле должны быть стили для БЭМ-блока order-created-card, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.order-created-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  &__sub-title {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  &__num {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  &__timeline {
+
+  }
+}
+
+.order-created-steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-width: 600px;
+
+  &:before {
+    content: "";
+    height: 1px;
+    width: 80%;
+    background: #ECECEC;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__item {
+    padding: 0 10px;
+
+    &.active {
+      .order-created-steps__num {
+        svg {
+          stroke: #A05175;
+        }
+      }
+      .order-created-steps__title {
+        color: #A05175;
+      }
+    }
+  }
+  
+  &__num {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 4px 20px rgba(74, 74, 74, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: $color-main;
+    margin: auto;
+    position: relative;
+
+    svg {
+      stroke: #B2A8B5;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: $color-main;
+    margin-top: 16px;
+    color: #B2A8B5;
+  }
+}

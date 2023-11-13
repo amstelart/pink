@@ -1,0 +1,21 @@
+// В этом файле должны быть стили для БЭМ-блока page-back-link, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-back-link {
+
+  $block-name:                &; // #{$block-name}__element
+
+  text-decoration: none;
+  color: #A05175;
+  font-weight: 600;
+
+  svg,
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  svg {
+    margin-right: 8px;
+  }
+}

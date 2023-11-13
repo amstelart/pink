@@ -103,4 +103,24 @@
   //     border-bottom-left-radius: 0;
   //   }
   // }
+
+  &--delivery-addr {
+
+    .field-text:first-child {
+      flex-grow: 1;
+      margin-right: 30px;
+    }
+    .field-text:last-child {
+      flex-shrink: 0;
+      max-width: 178px;
+    }
+    
+    .field-text {
+      
+      .field-text__input {
+        border-radius: 10px !important;
+        border: 1px solid #ECECEC !important;
+      }
+    }
+  }
 }

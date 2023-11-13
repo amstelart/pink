@@ -1,0 +1,109 @@
+// В этом файле должны быть стили для БЭМ-блока form-order, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.form-order {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__actions {
+
+    display: flex;
+
+    .btn {
+      margin-right: 30px;
+      font-size: 18px;
+      padding: 18px 100px;
+      border-radius: 30px;
+    }
+  }
+
+  &__buyer-info {
+    margin-bottom: 30px;
+
+    @include row;
+  }
+
+  &__buyer-info-col {
+    @include col();
+    @include col(lg, 6);
+
+    .field-text {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__delivery-var {
+    margin-bottom: 30px;
+  }
+
+  &__delivery-addr {
+    margin-bottom: 30px;
+  }
+
+  &__add-comments {
+    margin-bottom: 30px;
+  }
+
+  &__add-comments-link {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    color: $color-main;
+    line-height: 1.2;
+    text-decoration: none;
+
+    span,
+    svg {
+      vertical-align: middle;
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &__wishes {
+    margin-bottom: 30px;
+  }
+
+  &__wishes-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+
+  &__wishes-row {
+    @include row;
+  }
+
+  &__wishes-col {
+    @include col();
+    @include col(lg, 6);
+  }
+
+  &__wishes-field {
+    margin-bottom: 30px;
+  }
+
+  &__pm {
+    margin-bottom: 10px;
+  }
+  &__pm-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+
+  &__pm-row {
+    @include row;
+  }
+
+  &__pm-col {
+    @include col();
+    @include col(lg, 4);
+
+    margin-bottom: 30px;
+  }
+}

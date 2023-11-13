@@ -13,7 +13,7 @@
   &--contacts {
 
     margin-top: 30px;
-    margin-right: 115px;
+    // margin-right: 115px;
 
     #{$block-name}__icon {
       fill: $color-main;
@@ -27,6 +27,10 @@
 
     #{$block-name}__actions {
       margin-top: 28px;
+    }
+
+    @media (min-width: $screen-sm) {
+      margin-right: 115px;
     }
   }
 
@@ -56,5 +60,10 @@
   &__icon {
     display: inline-block;
     fill: #fff;
+
+    @media (max-width: $screen-md) {
+      width: 32px;
+      height: 32px;
+    }
   }
 }

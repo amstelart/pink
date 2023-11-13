@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Корзина Шаг-2</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main role="main" class="page-cart">
+
+        <section class="page-cart__header">
+          <div class="container">
+            <div class="page-cart__header-inner">
+              <a href="#" class="page-cart__back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M11 5L3 12L11 19" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 12H21" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Вернуться в каталог</span>
+              </a>
+              <div class="page-cart-steps">
+                <div class="page-cart-steps__item">
+                  <div class="page-cart-steps__num">
+                    <span>1</span>
+                  </div>
+                  <div class="page-cart-steps__title">Корзина</div>
+                </div>
+                <div class="page-cart-steps__item active">
+                  <div class="page-cart-steps__num">
+                    <span>2</span>
+                  </div>
+                  <div class="page-cart-steps__title">Оформление заказа</div>
+                </div>
+                <div class="page-cart-steps__item">
+                  <div class="page-cart-steps__num">
+                    <span>3</span>
+                  </div>
+                  <div class="page-cart-steps__title">Заказ создан</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-cart-layout">
+          <div class="container">
+            <div class="page-cart-layout__row">
+              <div class="page-cart-layout__main">
+                <div class="page-cart__making-order">
+                  <form action="" class="form-order">
+                    <div class="form-order__buyer-info">
+                      <div class="form-order__buyer-info-col">
+                        <label class="field-text">
+                          <span class="field-text__input-wrap">
+                            <input class="field-text__input" type="text" placeholder="Ваше имя" id="" name="">
+                          </span>
+                        </label>
+                      </div>
+                      <div class="form-order__buyer-info-col"></div>
+                      <div class="form-order__buyer-info-col">
+                        <label class="field-text">
+                          <span class="field-text__input-wrap">
+                            <input class="field-text__input" type="text" placeholder="Ваш телефон" id="" name="">
+                          </span>
+                        </label>
+                      </div>
+                      <div class="form-order__buyer-info-col">
+                        <label class="field-text">
+                          <span class="field-text__input-wrap">
+                            <input class="field-text__input" type="text" placeholder="Ваш email" id="" name="">
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-order__delivery">
+                      <div class="form-order__delivery-var">
+                        <div class="field-radio field-radio--delivery">
+                          <div class="field-radio__input-wrap">
+                            <label class="field-radio__name">
+                              <input class="field-radio__input" type="radio" id="" name="delivery-radio">
+                              <span class="field-radio__name-text">Доставить получателю</span>
+                            </label>
+                          </div>
+                          <div class="field-radio__input-wrap">
+                            <label class="field-radio__name">
+                              <input class="field-radio__input" type="radio" id="" name="delivery-radio" checked>
+                              <span class="field-radio__name-text">Доставить мне</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-order__delivery-addr">
+                        <div class="fields-group fields-group--delivery-addr">
+                          <label class="field-text">
+                            <span class="field-text__input-wrap">
+                              <input class="field-text__input" type="text" placeholder="Адрес доставки" id="" name="">
+                            </span>
+                          </label>
+                          <label class="field-text">
+                            <span class="field-text__input-wrap">
+                              <input class="field-text__input" type="text" placeholder="Кв./офис" id="" name="">
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-order__add-comments">
+                        <a href="#" class="form-order__add-comments-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.75 23.75C14.75 24.3023 15.1977 24.75 15.75 24.75C16.3023 24.75 16.75 24.3023 16.75 23.75V16.75H23.75C24.3023 16.75 24.75 16.3023 24.75 15.75C24.75 15.1977 24.3023 14.75 23.75 14.75H16.75V7.75C16.75 7.19772 16.3023 6.75 15.75 6.75C15.1977 6.75 14.75 7.19772 14.75 7.75V14.75H7.75C7.19772 14.75 6.75 15.1977 6.75 15.75C6.75 16.3023 7.19772 16.75 7.75 16.75H14.75V23.75Z" fill="#A05175"/>
+                          </svg>
+                          <span>Добавить комментарий для курьера</span>
+                        </a>
+                      </div>
+                      <div class="form-order__wishes">
+                        <form action="">
+                          <div class="form-order__wishes-title">Особые пожелания</div>
+                          <div class="field-checkbox form-order__wishes-field">
+                            <label class="field-checkbox__name">
+                              <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                              <span class="field-checkbox__name-text">Запомнить мои данные и зарегистрироваться</span>
+                            </label>
+                          </div>
+                          <label class="field-text form-order__wishes-field">
+                            <span class="field-text__input-wrap">
+                              <textarea class="field-text__input" type="text" rows="7" placeholder="Комментарий" id="" name=""></textarea>
+                            </span>
+                          </label>
+                          <div class="form-order__wishes-row">
+                            <div class="form-order__wishes-col">
+                              <label class="field-text form-order__wishes-field">
+                                <span class="field-text__input-wrap">
+                                  <input class="field-text__input" type="date" placeholder="Дата доставки" id="" name="">
+                                </span>
+                              </label>
+                            </div>
+                            <div class="form-order__wishes-col">
+                              <label class="field-text form-order__wishes-field">
+                                <span class="field-text__input-wrap">
+                                  <input class="field-text__input" type="time" placeholder="Время доставки" id="" name="">
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="form-order__pm">
+                        <div class="form-order__pm-title">Способ оплаты</div>
+                        <div class="form-order__pm-row">
+                          <div class="form-order__pm-col">
+                            <div class="field-radio__input-wrap payment-method-field">
+                              <label class="field-radio__name">
+                                <input class="field-radio__input" type="radio" id="" name="payment-method-radio">
+                                <span class="field-radio__name-text payment-method-field__card">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.9999 26.6673H3.99992C2.52792 26.6673 1.33325 25.4727 1.33325 24.0007V8.00065C1.33325 6.52865 2.52792 5.33398 3.99992 5.33398H27.9999C29.4719 5.33398 30.6666 6.52865 30.6666 8.00065V24.0007C30.6666 25.4727 29.4719 26.6673 27.9999 26.6673Z" fill="#A05175" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M30.6666 13.334H1.33325" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.6667 21.3336V21.3203" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.66675 21.3336V21.3203" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                  <span>Банковская карта</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="form-order__pm-col">                            
+                            <div class="field-radio__input-wrap payment-method-field">
+                              <label class="field-radio__name">
+                                <input class="field-radio__input" type="radio" id="" name="payment-method-radio" checked>
+                                <span class="field-radio__name-text payment-method-field__card">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M7.30682 28V4H17.6364C20.8182 4 23.3409 4.67429 25.2045 6.02286C27.0682 7.37143 28 9.39429 28 12.0914C28 14.7657 27.0682 16.7771 25.2045 18.1257C23.3409 19.4743 20.8182 20.1486 17.6364 20.1486H10.375L12.8636 17.68V28H7.30682ZM12.8636 18.2629L10.375 15.7943H17.6023C19.125 15.7943 20.3068 15.4857 21.1477 14.8686C21.9886 14.2286 22.4091 13.3143 22.4091 12.1257C22.4091 10.96 21.9886 10.0686 21.1477 9.45143C20.3068 8.83429 19.125 8.52571 17.6023 8.52571H10.375L12.8636 5.88571V18.2629ZM4 24.9143V22.0686H20.2273V24.9143H4Z" fill="#A05175"/>
+                                  </svg>
+                                  <span>Наличными курьеру</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="form-order__pm-col">
+                            <div class="field-radio__input-wrap payment-method-field">
+                              <label class="field-radio__name">
+                                <input class="field-radio__input" type="radio" id="" name="payment-method-radio">
+                                <span class="field-radio__name-text payment-method-field__card">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M5 4C5 3.44772 5.44772 3 6 3H26C26.5523 3 27 3.44772 27 4V26.7639C27 27.5073 26.2177 27.9908 25.5528 27.6584L23.4292 26.5966C22.5118 26.1379 21.4236 26.1797 20.5441 26.7074L17.3924 28.5984C17.1087 28.7686 16.7592 28.7875 16.4588 28.6489L11.7572 26.4789C10.9595 26.1107 10.0405 26.1107 9.24282 26.4789L6.41906 27.7821C5.75644 28.088 5 27.604 5 26.8742V4Z" fill="#A05175" stroke="#A05175" stroke-width="2"/>
+                                    <path d="M10 8H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10 13H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10 18H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                  </svg>
+                                  <span>Счет для юр. лиц</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="form-order__pm-col">
+                            <div class="field-radio__input-wrap payment-method-field">
+                              <label class="field-radio__name">
+                                <input class="field-radio__input" type="radio" id="" name="payment-method-radio">
+                                <span class="field-radio__name-text payment-method-field__card">
+                                  <img src="img/icon-sbp.png" alt="">
+                                  <span>СПБ</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="form-order__pm-col">
+                            <div class="field-radio__input-wrap payment-method-field">
+                              <label class="field-radio__name">
+                                <input class="field-radio__input" type="radio" id="" name="payment-method-radio">
+                                <span class="field-radio__name-text payment-method-field__card">
+                                  <img src="img/icon-tinkoff-pay.png" alt="">
+                                  <span>Tinkoff Pay</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="form-order__pm-col">
+                            <div class="field-radio__input-wrap payment-method-field">
+                              <label class="field-radio__name">
+                                <input class="field-radio__input" type="radio" id="" name="payment-method-radio">
+                                <span class="field-radio__name-text payment-method-field__card">
+                                  <img src="img/icon-yandex-pay.png" alt="">
+                                  <span>Yandex Pay</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-order__actions">
+                      <a href="#" class="btn btn--main">Оплатить</a>
+                      <div class="field-checkbox">
+                        <label class="field-checkbox__name">
+                          <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                          <span class="field-checkbox__name-text">Я согласен с условиями обработки <a href="#">персональных данных</a></span>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="page-cart-layout__sidebar">
+                <div class="page-cart__box">
+                  <div class="cart-order">
+                    <div class="cart-order__body">
+                      <div class="cart-order__part">
+                        <div class="cart-order__field cart-order__field--bold">
+                          <div class="cart-order__field-name">Сумма</div>
+                          <div class="cart-order__field-value">3280 ₽</div>
+                        </div>
+                        <div class="cart-order__field cart-order__field--light">
+                          <div class="cart-order__field-name">Стоимость доставки</div>
+                          <div class="cart-order__field-value">0 ₽</div>
+                        </div>
+                      </div>
+                      <div class="cart-order__part">
+                        <div class="cart-order__info-alert">Cтоимость выше, в связи с увеличением цен поставщика</div>
+                      </div>
+                      <div class="cart-order__part">
+                        <div class="cart-order__field cart-order__field--middle">
+                          <div class="cart-order__field-name">Ваши бонусы</div>
+                          <div class="cart-order__field-value">587</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-order__footer">
+                      <div class="cart-order__total-amount">
+                        <span>Итого</span>
+                        <span>3163 ₽</span>
+                      </div>
+                      <!-- <a href="#" class="btn btn--main cart-order__buy-btn">Оформить заказ</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

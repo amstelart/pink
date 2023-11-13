@@ -1,0 +1,15 @@
+// В этом файле должны быть стили для БЭМ-блока cart-dop, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.cart-dop {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+}

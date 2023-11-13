@@ -9,8 +9,8 @@ $text-color--muted:           hsl(0, 0%, 50%) !default;
 
 $line-height:                 1.375em !default;
 
-$field-padding-vertical:      0.3em !default;
-$field-padding-horizontal:    0.7em !default;
+$field-padding-vertical:      0.8em;
+$field-padding-horizontal:    1.4em;
 
 $border-radius:               3px !default;
 
@@ -37,11 +37,12 @@ $border-radius:               3px !default;
     padding: $field-padding-vertical  $field-padding-horizontal;
     margin: 0;
     line-height: $line-height;
-    font-size: 1em;
+    font-size: 16px;
+    font-weight: 400;
     font-family: inherit;
     background-color: #fff;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
+    border: 1px solid #ECECEC;
+    border-radius: 10px;
     appearance: textfield;
 
     &:focus {
@@ -70,7 +71,7 @@ $border-radius:               3px !default;
     }
 
     &::placeholder {
-      color: $text-color--muted;
+      color: #B2A8B5;
       opacity: 1;
     }
 

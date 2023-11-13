@@ -33,6 +33,38 @@
   &__footer-wrapper {
     flex-shrink: 0;
   }
+
+  &__login {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  &__login-main {
+    padding-top: 116px;
+
+    .logo {
+      margin-bottom: 60px;
+    } 
+  }
+
+  &__login-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
 }
 
 *,

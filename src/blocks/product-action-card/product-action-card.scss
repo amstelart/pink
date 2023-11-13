@@ -100,20 +100,40 @@
     flex-grow: 1;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding: 15px 23px 19px 15px;
+    padding: 15px 12px 15px 20px;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $screen-sm) {
+      padding: 15px 23px 19px 15px;
+    }
   }
 
   &__body-top {
     display: flex;
     align-items: flex-start;
     flex-grow: 1;
+    flex-direction: column;
+
+    @media (min-width: $screen-sm) {
+      flex-direction: row;
+    }
   }
 
   &__body-bottom {
     display: flex;
     align-items: flex-end;
+  }
+
+  &__name {
+    order: 2;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__article {
+    order: 1;
+    font-size: 8px;
   }
 
   &__name,
@@ -141,12 +161,17 @@
   }
 
   &__btn {
-    padding: 12px;
+    padding: 8px;
     border-radius: 50%;
-    line-height: 32px;
+    line-height: 20px;
     background-color: #fff;
     border: none;
     box-shadow: 0px 4px 30px 4px rgba(74, 74, 74, 0.25);
+
+    @media (min-width: $screen-sm) {
+      padding: 12px;
+      line-height: 32px;
+    }
 
     &.added {
       box-shadow: none;
@@ -158,11 +183,16 @@
     }
     
     svg {
-      width: 32px;
-      height: 32px;
+      width: 20px;
+      height: 20px;
       display: block;
       stroke: $color-main;
       stroke-width: 2;
+
+      @media (min-width: $screen-sm) {
+        width: 32px;
+        height: 32px;
+      }
     }
   }
 }

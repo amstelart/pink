@@ -24,7 +24,14 @@
     text-decoration: none;
     color: currentColor;
     display: block;
-    padding: 20px 20px 20px 64px;
+    padding: 16px 20px 16px 64px;
     border-radius: 15px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      left: 20px;
+      top: 12px;
+    }
   }
 }

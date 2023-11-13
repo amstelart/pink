@@ -1,0 +1,29 @@
+// В этом файле должны быть стили для БЭМ-блока la-profile, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.la-profile {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  &__row {
+    @include row;
+
+    margin-bottom: 100px;
+  }
+
+  &__sidebar {
+    @include col();
+    @include col(md, 3);
+  }
+
+  &__main {
+    @include col();
+    @include col(md, 9);
+  }
+}

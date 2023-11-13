@@ -79,7 +79,17 @@
     "product-view": [],
     "page-cart": [],
     "favourites-empty": [],
-    "product-carousel": []
+    "product-carousel": [],
+    "cart-list": [],
+    "cart-dop": [],
+    "cart-order": [],
+    "form-order": [],
+    "order-created-card": [],
+    "login-form": [],
+    "la-profile": [],
+    "page-back-link": [],
+    "profile-card": [],
+    "profile-board": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

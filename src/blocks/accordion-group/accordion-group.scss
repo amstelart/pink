@@ -6,14 +6,22 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  padding: 10px 0 38px;
+  padding: 10px 0;
+
+  @media (min-width: $screen-sm) {
+    padding: 10px 0 38px;
+  }
 }
 
 .accordion-group__accordion {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   border-radius: 15px;
   background-color: #fff;
   box-shadow: 0px 4px 30px 4px rgba(74, 74, 74, 0.25);
+
+  @media (min-width: $screen-sm) {
+    margin: 0 0 20px 0;
+  }
 }
 
 .accordion-group__accordion-heading {
@@ -28,14 +36,31 @@
   font-size: 14px;
   line-height: 17px;
   font-weight: 600;
-  padding: 20px 20px;
+  padding: 20px 45px 20px 20px;
   text-align: left;
   width: 100%;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-bottom: 2px solid #261C29;
+    border-right: 2px solid #261C29;
+    right: 24px;
+    top: 32px;
+    transform: translateY(-70%) rotate(45deg);
+  }
+
+  @media (min-width: $screen-sm) {
+    padding: 25px 56px 25px 20px;
+  }
 
   @media (min-width: $screen-md) {
     font-size: 18px;
     line-height: 22px;
-    padding: 25px 20px;
+    padding: 25px 56px 25px 20px;
   }
 }
 .accordion-group__accordion-btn:focus {
@@ -60,5 +85,7 @@
 }
 
 .accordion-group__accordion-btn_expanded {
-
+  &:before {
+    transform: translateY(-30%) rotate(225deg);
+  }
 }

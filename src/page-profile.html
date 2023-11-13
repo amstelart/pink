@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>О компании</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main role="main">
+
+        <div class="la-profile">
+          <div class="container">
+            <div class="la-profile__header">
+              <a href="#" class="page-back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M11 5L3 12L11 19" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 12H21" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Вернуться в каталог</span>
+              </a>
+            </div>
+            <div class="la-profile__row">
+              <div class="la-profile__sidebar">
+                <div class="profile-card">
+                  <div class="profile-card__header">
+                    <div class="profile-card__phone">+7 902 86 555 55</div>
+                    <div class="profile-card__email">123@gmail.com</div>
+                  </div>
+                  <div class="profile-card__body">
+                    <ul class="profile-card__nav">
+                      <li class="profile-card__nav-item active">
+                        <a href="#" class="profile-card__nav-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M1 12L4 15L7 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 21C17.971 21 22 16.971 22 12C22 7.029 17.971 3 13 3C8.029 3 4 7.029 4 12V15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 8V12H17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          Заказы
+                        </a>
+                      </li>
+                      <li class="profile-card__nav-item">
+                        <a href="#" class="profile-card__nav-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 12V22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.19424 7C3.06824 6.607 3.00024 6.185 3.00024 5.745C3.00024 3.677 4.51024 2 6.37524 2C9.75024 2 12.0002 6.993 12.0002 6.993" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.8058 7C20.9318 6.607 20.9998 6.185 20.9998 5.745C20.9998 3.677 19.4898 2 17.6248 2C14.2498 2 11.9998 6.993 11.9998 6.993" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 12V20C22 21.104 21.104 22 20 22H4C2.896 22 2 21.104 2 20V12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12H23V7H1V12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          Бонусы
+                        </a>
+                      </li>
+                      <li class="profile-card__nav-item">
+                        <a href="#" class="profile-card__nav-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9584 14.061C20.0584 13.556 20.1124 13.034 20.1124 12.5C20.1124 11.965 20.0584 11.444 19.9584 10.939L21.7644 9.45C22.2674 9.036 22.3964 8.318 22.0714 7.754L21.2024 6.246C20.8764 5.682 20.1914 5.436 19.5824 5.664L17.3844 6.489C16.6044 5.805 15.6944 5.271 14.6924 4.93L14.3074 2.614C14.2004 1.971 13.6454 1.5 12.9934 1.5H11.2554C10.6044 1.5 10.0494 1.971 9.9424 2.614L9.55739 4.93C8.5554 5.271 7.6444 5.805 6.8654 6.489L4.6674 5.664C4.0584 5.436 3.3724 5.682 3.0474 6.246L2.1784 7.754C1.8534 8.318 1.9824 9.036 2.4844 9.45L4.2914 10.939C4.1904 11.444 4.1374 11.965 4.1374 12.5C4.1374 13.034 4.1904 13.556 4.2914 14.061L2.4844 15.55C1.9824 15.964 1.8534 16.682 2.1784 17.246L3.0474 18.754C3.3724 19.318 4.0584 19.564 4.6674 19.336L6.8654 18.511C7.6444 19.195 8.5554 19.729 9.55739 20.07L9.9424 22.386C10.0494 23.029 10.6044 23.5 11.2554 23.5H12.9934C13.6454 23.5 14.2004 23.029 14.3074 22.386L14.6924 20.07C15.6944 19.728 16.6044 19.195 17.3844 18.511L19.5824 19.336C20.1914 19.564 20.8764 19.318 21.2024 18.754L22.0714 17.246C22.3964 16.682 22.2674 15.964 21.7644 15.55L19.9584 14.061Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1245 12.5C15.1245 14.157 13.7815 15.5 12.1245 15.5C10.4685 15.5 9.12451 14.157 9.12451 12.5C9.12451 10.843 10.4685 9.5 12.1245 9.5C13.7815 9.5 15.1245 10.843 15.1245 12.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          Настройки аккаунта
+                        </a>
+                      </li>
+                      <li class="profile-card__nav-item">
+                        <a href="#" class="profile-card__nav-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 3H5C3.896 3 3 3.896 3 5V19C3 20.104 3.896 21 5 21H12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 16L21 12L17 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12H9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          Выход
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="la-profile__main">
+                <div class="profile-board">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

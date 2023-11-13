@@ -34,5 +34,42 @@
 }
 
 .catalog-sort {
+  color: #261C29;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
   
+  &__name {
+    padding: 8px 0;
+  }
+
+  &__nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__nav-item {
+    display: inline-block;
+    margin-left: 16px;
+
+    a {
+      color: #261C29;
+      text-decoration: none;
+      display: block;
+      padding: 8px 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.active {
+
+      a {
+        color: $color-main;
+        text-decoration: underline;
+      }
+    }
+  }
 }

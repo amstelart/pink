@@ -15,9 +15,14 @@
 
   .logo {
     flex-shrink: 0;
-    margin-right: 55px;
-    width: 128px;
-    height: 57px;
+    width: 103px;
+    height: 46px;
+    
+    @media (min-width: $screen-sm) {
+      width: 128px;
+      height: 57px;
+      margin-right: 55px;
+    }
 
     @media (min-width: $screen-lg) {
       width: 274px;
@@ -35,7 +40,12 @@
     &--top {
       background: #fff;
       padding-top: 30px;
-      padding-bottom: 19px;
+      padding-bottom: 14px;
+
+      @media (min-width: $screen-sm) {
+        padding-top: 30px;
+        padding-bottom: 19px;
+      }
 
       @media (min-width: $screen-lg) {
         background: transparent;
@@ -130,7 +140,10 @@
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    
+    @media (min-width: $screen-md) {
+      margin-bottom: 10px;
+    }
   }
 
   .mobile-header-group {
@@ -152,7 +165,11 @@
 
   &--mobile {
     display: flex;
-    margin: 30px 0;
+    margin: 20px 0;
+
+    @media (min-width: $screen-md) {
+      margin: 30px 0;
+    }
 
     .hdelivery__title {
       margin-bottom: 0;
@@ -276,7 +293,11 @@
 .mobile-header-nav {
   display: flex;
   overflow-x: scroll;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-sm) {
+    margin-bottom: 30px;
+  }
 
   &__item {
     margin-right: 16px;

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Корзина Шаг-3</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main role="main" class="page-cart">
+
+        <section class="page-cart__header">
+          <div class="container">
+            <div class="page-cart__header-inner">
+              <a href="#" class="page-cart__back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M11 5L3 12L11 19" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 12H21" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Вернуться в каталог</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-cart-layout">
+          <div class="container">
+            <div class="page-cart-layout__row">
+              <div class="page-cart-layout__main">
+                <div class="order-created-card">
+                  <div class="order-created-card__header">
+                    <div class="order-created-card__title">Спасибо</div>
+                    <div class="order-created-card__sub-title">Ваш заказ создан</div>
+                    <div class="order-created-card__num">Номер заказа: 00001258</div>
+                  </div>
+                  <div class="order-created-card__timeline">
+                    <div class="order-created-steps">
+                      <div class="order-created-steps__item active">
+                        <div class="order-created-steps__num">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                            <path d="M6 18.6667L14 24L27.3333 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                        <div class="order-created-steps__title">Корзина</div>
+                      </div>
+                      <div class="order-created-steps__item">
+                        <div class="order-created-steps__num">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                            <path d="M6 18.6667L14 24L27.3333 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                        <div class="order-created-steps__title">Принят флористом</div>
+                      </div>
+                      <div class="order-created-steps__item">
+                        <div class="order-created-steps__num">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                            <path d="M6 18.6667L14 24L27.3333 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                        <div class="order-created-steps__title">Доставляется</div>
+                      </div>
+                      <div class="order-created-steps__item">
+                        <div class="order-created-steps__num">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                            <path d="M6 18.6667L14 24L27.3333 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                        <div class="order-created-steps__title">Доставлен</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-cart-layout__sidebar">
+                <div class="page-cart__box">
+                  <div class="cart-order">
+                    <div class="cart-order__body">
+                      <div class="cart-order__part">
+                        <p>Букет роз «Откровение»</p>
+                      </div>
+                      <div class="cart-order__part">
+                        <p>Имя получателя: Кристина</p>
+                        <p>Телефон получателя: +7 902 86 555 55</p>
+                        <p>Адрес доставки: г. Челябинск, ул. Братьев Кашириных, д. 124</p>
+                        <p>Дата доставки: 1 октября</p>
+                        <p>Время доставки: 10:00-12:00</p>
+                        <p>Особые пожелания: Сделать фото перед доставкой</p>
+                      </div>
+                    </div>
+                    <div class="cart-order__footer">
+                      <div class="cart-order__payment-method">
+                        <span class="cart-order__payment-method-title">Способ оплаты</span>
+                        <span class="cart-order__payment-method-value">СБП</span>
+                      </div>
+                      <div class="cart-order__total-amount">
+                        <span>Сумма к оплате</span>
+                        <span>3280 ₽</span>
+                      </div>
+                      <a href="#" class="btn btn--main cart-order__buy-btn">Оплатить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

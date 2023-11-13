@@ -112,4 +112,11 @@
 
     margin-bottom: 40px;
   }
+
+  &__box {
+    border-radius: 15px;
+    background: var(--White, #FFF);
+    padding: 24px;
+    box-shadow: 0px 4px 30px 4px rgba(74, 74, 74, 0.25);
+  }
 }

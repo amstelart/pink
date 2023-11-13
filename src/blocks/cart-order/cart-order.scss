@@ -1,0 +1,90 @@
+// В этом файле должны быть стили для БЭМ-блока cart-order, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.cart-order {
+
+  $block-name:                &; // #{$block-name}__element
+
+
+  &__footer {
+    margin-top: 30px;
+
+    .btn {
+      width: 100%;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-radius: 30px;
+    }
+  }
+
+  &__total-amount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  &__field {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.2;
+
+    &--bold {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    &--middle {
+      font-size: 18px;
+      font-weight: 400;
+    }
+    &--light {
+      font-size: 14px;
+      font-weight: 400px;
+    }
+  }
+
+  &__field-name {
+    flex-grow: 1;
+  }
+  &__field-value {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  &__part {
+    margin-bottom: 30px;
+
+    .cart-order__field {
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+  }
+
+  &__info-alert {
+    color: #F178B6;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__payment-method {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
+  &__payment-method-title {
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  &__payment-method-value {
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 400;
+  }
+}
