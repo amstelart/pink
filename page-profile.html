@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>О компании</title>
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Redressed&display=swap" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="page-header__inner page-header__inner--top">
+          <div class="page-header__top">
+            <a href="index.html" class="logo">
+              <img src="img/logo.svg" alt>
+            </a>
+            <div class="page-header__content">
+              <div class="hcleft">
+                <div class="hdelivery">
+                  <div class="hdelivery__title">Город доставки</div>
+                  <div class="dropdown hdelivery-select-city">
+                    <a id="select-city" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Челябинск</a>
+                    <div class="dropdown__menu" aria-labelledby="select-city">
+                      Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                      <hr>
+                      <form action>
+                        <input type="text">
+                        <select>
+                          <option>Название пункта</option>
+                        </select>
+                        <textarea rows="3"></textarea>
+                        <button class="btn">Отправить эту форму</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="hcontacts">
+                  <div class="hcontacts__title">Ежедневно с 8:00 до 22:00</div>
+                  <div class="hcontacts__phone"><a href="tel:+79085714700">+7 908 571-47-00</a></div>
+                  <div class="hcontacts__infotext">Прием заказов на сайте круглосуточно</div>
+                  <div class="dropdown more-contacts">
+                    <a id="more-contacts" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Еще контакты</a>
+                    <div class="dropdown__menu" aria-labelledby="more-contacts">
+                      Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                      <hr>
+                      <form action>
+                        <input type="text">
+                        <select>
+                          <option>Название пункта</option>
+                        </select>
+                        <textarea rows="3"></textarea>
+                        <button class="btn">Отправить эту форму</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hcright">
+                <div class="hcright__feedback">
+                  <a href="#" class="btn btn--main">Заказать звонок</a>
+                </div>
+                <div class="hcright__panels">
+                  <div class="user-panel">
+                    <div class="dropdown user-panel__help">
+                      <a id="dropdown-demo-3" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Помощь</a>
+                      <div class="dropdown__menu" aria-labelledby="dropdown-demo-3">
+                        <ul>
+                          <li><a href="#">О компании</a></li>
+                          <li><a href="#">Доставка</a></li>
+                          <li><a href="#">Оплата, гарантии, возврат</a></li>
+                          <li><a href="#">Отзывы и фото</a></li>
+                          <li><a href="#">Корпоративным клиентам</a></li>
+                          <li><a href="#">Контакты</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <a class="user-panel__login" href="#">Войти</a>
+                  </div>
+                  <div class="shop-panel">
+                    <a class="shop-panel__btn" href="#">
+                      <svg class="social__icon" width="32" height="32">
+                        <use xlink:href="img/sprite-svg.svg#icon-search"/>
+                      </svg>
+                    </a>
+                    <a class="shop-panel__btn shop-panel-favourites added" href="#">
+                      <svg class="social__icon" width="32" height="32">
+                        <use xlink:href="img/sprite-svg.svg#icon-heart"/>
+                      </svg>
+                      <div class="added-value"><span>1</span></div>
+                    </a>
+                    <a class="shop-panel__btn shop-panel-cart added" href="#">
+                      <svg class="social__icon" width="32" height="32">
+                        <use xlink:href="img/sprite-svg.svg#icon-cart"/>
+                      </svg>
+                      <div class="added-value"><span>100</span></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-header__inner">    
+          <div class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item active">
+                <a href="#" class="header-nav__link">Розы</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Букеты</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Корзины с цветами</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Большие букеты</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Цветы в коробках</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Воздушные шары</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Ещё</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-header-group">
+            <div class="hdelivery hdelivery--mobile">
+              <div class="hdelivery__title">Город доставки</div>
+              <div class="dropdown hdelivery-select-city">
+                <a id="select-city" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Челябинск</a>
+                <div class="dropdown__menu" aria-labelledby="select-city">
+                  Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                  <hr>
+                  <form action>
+                    <input type="text">
+                    <select>
+                      <option>Название пункта</option>
+                    </select>
+                    <textarea rows="3"></textarea>
+                    <button class="btn">Отправить эту форму</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-header-nav">
+              <div class="mobile-header-nav__item">
+                <a href="#" class="mobile-header-nav__link">
+                  <img src="img/product-card-image-01.jpg" alt>
+                  <div class="overlay"></div>
+                  <span>Розы</span>
+                </a>
+              </div>
+              <div class="mobile-header-nav__item">
+                <a href="#" class="mobile-header-nav__link">
+                  <img src="img/product-card-image-01.jpg" alt>
+                  <div class="overlay"></div>
+                  <span>Букеты</span>
+                </a>
+              </div>
+              <div class="mobile-header-nav__item">
+                <a href class="mobile-header-nav__link">
+                  <img src="img/product-card-image-01.jpg" alt>
+                  <div class="overlay"></div>
+                  <span>Корзины с цветами</span>
+                </a>
+              </div>
+              <div class="mobile-header-nav__item">
+                <a href class="mobile-header-nav__link">
+                  <img src="img/product-card-image-01.jpg" alt>
+                  <div class="overlay"></div>
+                  <span>Большие букеты</span>
+                </a>
+              </div>
+              <div class="mobile-header-nav__item">
+                <a href class="mobile-header-nav__link">
+                  <img src="img/product-card-image-01.jpg" alt>
+                  <div class="overlay"></div>
+                  <span>Цветы в коробках</span>
+                </a>
+              </div>
+              <div class="mobile-header-nav__item">
+                <a href class="mobile-header-nav__link">
+                  <img src="img/product-card-image-01.jpg" alt>
+                  <div class="overlay"></div>
+                  <span>Воздушные шарых</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="page-header__filter-group">
+            <div class="dropdown filter-dropdown">
+              <a id="dropdown-demo-3" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Цветы</a>
+              <div class="dropdown__menu" aria-labelledby="dropdown-demo-3">
+                Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                <hr>
+                <form action>
+                  <input type="text">
+                  <select>
+                    <option>Название пункта</option>
+                  </select>
+                  <textarea rows="3"></textarea>
+                  <button class="btn">Отправить эту форму</button>
+                </form>
+              </div>
+            </div>
+            <div class="dropdown filter-dropdown">
+              <a id="dropdown-demo-3" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Повод</a>
+              <div class="dropdown__menu" aria-labelledby="dropdown-demo-3">
+                Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                <hr>
+                <form action>
+                  <input type="text">
+                  <select>
+                    <option>Название пункта</option>
+                  </select>
+                  <textarea rows="3"></textarea>
+                  <button class="btn">Отправить эту форму</button>
+                </form>
+              </div>
+            </div>
+            <div class="dropdown filter-dropdown">
+              <a id="dropdown-demo-3" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Кому</a>
+              <div class="dropdown__menu" aria-labelledby="dropdown-demo-3">
+                Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                <hr>
+                <form action>
+                  <input type="text">
+                  <select>
+                    <option>Название пункта</option>
+                  </select>
+                  <textarea rows="3"></textarea>
+                  <button class="btn">Отправить эту форму</button>
+                </form>
+              </div>
+            </div>
+            <div class="dropdown filter-dropdown">
+              <a id="dropdown-demo-3" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Размер</a>
+              <div class="dropdown__menu" aria-labelledby="dropdown-demo-3">
+                Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                <hr>
+                <form action>
+                  <input type="text">
+                  <select>
+                    <option>Название пункта</option>
+                  </select>
+                  <textarea rows="3"></textarea>
+                  <button class="btn">Отправить эту форму</button>
+                </form>
+              </div>
+            </div>
+            <div class="dropdown filter-dropdown">
+              <a id="dropdown-demo-3" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Цвет</a>
+              <div class="dropdown__menu" aria-labelledby="dropdown-demo-3">
+                Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
+                <hr>
+                <form action>
+                  <input type="text">
+                  <select>
+                    <option>Название пункта</option>
+                  </select>
+                  <textarea rows="3"></textarea>
+                  <button class="btn">Отправить эту форму</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main role="main">
+        <div class="la-profile">
+          <div class="container">
+            <div class="la-profile__header">
+              <a href="#" class="page-back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                  <path d="M11 5L3 12L11 19" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 12H21" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Вернуться в каталог</span>
+              </a>
+            </div>
+            <div class="la-profile__row">
+              <div class="la-profile__sidebar">
+                <div class="profile-card">
+                  <div class="profile-card__header">
+                    <div class="profile-card__phone">+7 902 86 555 55</div>
+                    <div class="profile-card__email">123@gmail.com</div>
+                  </div>
+                  <div class="profile-card__body">
+                    <ul class="profile-card__nav">
+                      <li class="profile-card__nav-item active">
+                        <a href="#" class="profile-card__nav-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                            <path d="M1 12L4 15L7 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 21C17.971 21 22 16.971 22 12C22 7.029 17.971 3 13 3C8.029 3 4 7.029 4 12V15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 8V12H17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          Заказы
+                        </a>
+                      </li>
+                      <li class="profile-card__nav-item">
+                        <a href="#" class="profile-card__nav-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                            <path d="M12 12V22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.19424 7C3.06824 6.607 3.00024 6.185 3.00024 5.745C3.00024 3.677 4.51024 2 6.37524 2C9.75024 2 12.0002 6.993 12.0002 6.993" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.8058 7C20.9318 6.607 20.9998 6.185 20.9998 5.745C20.9998 3.677 19.4898 2 17.6248 2C14.2498 2 11.9998 6.993 11.9998 6.993" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 12V20C22 21.104 21.104 22 20 22H4C2.896 22 2 21.104 2 20V12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12H23V7H1V12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          Бонусы
+                        </a>
+                      </li>
+                      <li class="profile-card__nav-item">
+                        <a href="#" class="profile-card__nav-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9584 14.061C20.0584 13.556 20.1124 13.034 20.1124 12.5C20.1124 11.965 20.0584 11.444 19.9584 10.939L21.7644 9.45C22.2674 9.036 22.3964 8.318 22.0714 7.754L21.2024 6.246C20.8764 5.682 20.1914 5.436 19.5824 5.664L17.3844 6.489C16.6044 5.805 15.6944 5.271 14.6924 4.93L14.3074 2.614C14.2004 1.971 13.6454 1.5 12.9934 1.5H11.2554C10.6044 1.5 10.0494 1.971 9.9424 2.614L9.55739 4.93C8.5554 5.271 7.6444 5.805 6.8654 6.489L4.6674 5.664C4.0584 5.436 3.3724 5.682 3.0474 6.246L2.1784 7.754C1.8534 8.318 1.9824 9.036 2.4844 9.45L4.2914 10.939C4.1904 11.444 4.1374 11.965 4.1374 12.5C4.1374 13.034 4.1904 13.556 4.2914 14.061L2.4844 15.55C1.9824 15.964 1.8534 16.682 2.1784 17.246L3.0474 18.754C3.3724 19.318 4.0584 19.564 4.6674 19.336L6.8654 18.511C7.6444 19.195 8.5554 19.729 9.55739 20.07L9.9424 22.386C10.0494 23.029 10.6044 23.5 11.2554 23.5H12.9934C13.6454 23.5 14.2004 23.029 14.3074 22.386L14.6924 20.07C15.6944 19.728 16.6044 19.195 17.3844 18.511L19.5824 19.336C20.1914 19.564 20.8764 19.318 21.2024 18.754L22.0714 17.246C22.3964 16.682 22.2674 15.964 21.7644 15.55L19.9584 14.061Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1245 12.5C15.1245 14.157 13.7815 15.5 12.1245 15.5C10.4685 15.5 9.12451 14.157 9.12451 12.5C9.12451 10.843 10.4685 9.5 12.1245 9.5C13.7815 9.5 15.1245 10.843 15.1245 12.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          Настройки аккаунта
+                        </a>
+                      </li>
+                      <li class="profile-card__nav-item">
+                        <a href="#" class="profile-card__nav-link">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                            <path d="M12 3H5C3.896 3 3 3.896 3 5V19C3 20.104 3.896 21 5 21H12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 16L21 12L17 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12H9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          Выход
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="la-profile__main">
+                <div class="profile-board">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__row">
+            <ul class="page-footer__links">
+              <div class="page-footer__links-col">
+                <div class="page-footer__links-title">О компании</div>
+                <ul class="page-footer__links-list">
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Карта сайта</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__links-col">
+                <div class="page-footer__links-title">Цветы</div>
+                <ul class="page-footer__links-list">
+                  <li><a href="#">Альстромерии</a></li>
+                  <li><a href="#">Гвоздики</a></li>
+                  <li><a href="#">Гипсофила</a></li>
+                  <li><a href="#">Ирисы</a></li>
+                  <li><a href="#">Кустовые розы</a></li>
+                  <li><a href="#">Лилии</a></li>
+                  <li><a href="#">Орхидеи</a></li>
+                  <li><a href="#">Пионы</a></li>
+                  <li><a href="#">Ромашки</a></li>
+                  <li><a href="#">Тюльпаны</a></li>
+                  <li><a href="#">Хризантемы</a></li>
+                  <li><a href="#">Экзотические цветы</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__links-col">
+                <div class="page-footer__links-title">Личный кабинет</div>
+                <ul class="page-footer__links-list">
+                  <li><a href="#">Вход</a></li>
+                  <li><a href="#">Регистрация</a></li>
+                  <li><a href="#">Справка</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__links-col">
+                <div class="page-footer__links-title">Помощь</div>
+                <ul class="page-footer__links-list">
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Оплата</a></li>
+                  <li><a href="#">Гарантии</a></li>
+                  <li><a href="#">Корпоративным клиентам</a></li>
+                  <li><a href="#">Обработка персональных данных</a></li>
+                  <li><a href="#">Публичная оферта</a></li>
+                </ul>
+              </div>
+            </ul>
+            <div class="social page-footer__social">
+              <div class="social__list">
+                <div class="social__item">
+                  <a href="#" class="social__link" target="_blank">
+                    <svg class="social__icon" width="32" height="32">
+                      <use xlink:href="img/sprite-svg.svg#social-icon-whatsapp"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" class="social__link" target="_blank">
+                    <svg class="social__icon" width="32" height="32">
+                      <use xlink:href="img/sprite-svg.svg#social-icon-email"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" class="social__link" target="_blank">
+                    <svg class="social__icon" width="32" height="32">
+                      <use xlink:href="img/sprite-svg.svg#social-icon-telegram"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" class="social__link" target="_blank">
+                    <svg class="social__icon" width="32" height="33" viewbox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="path-1-inside-1_1_6973" fill="white">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 13.3711C5.00003 9.59986 5.00003 7.71424 6.1716 6.54267C7.34318 5.37109 9.22879 5.37109 13 5.37109H18.3334C22.1046 5.37109 23.9902 5.37109 25.1618 6.54267C26.3334 7.71424 26.3334 9.59986 26.3334 13.3711V18.7044C26.3334 22.4757 26.3334 24.3613 25.1618 25.5329C23.9902 26.7044 22.1046 26.7044 18.3334 26.7044H13C9.2288 26.7044 7.34318 26.7044 6.1716 25.5329C5.00003 24.3613 5.00003 22.4757 5.00003 18.7044V13.3711ZM22 16.8711C22 20.4609 19.0899 23.3711 15.5 23.3711C11.9102 23.3711 9.00003 20.4609 9.00003 16.8711C9.00003 13.2812 11.9102 10.3711 15.5 10.3711C19.0899 10.3711 22 13.2812 22 16.8711ZM15.5 20.1211C17.295 20.1211 18.75 18.666 18.75 16.8711C18.75 15.0762 17.295 13.6211 15.5 13.6211C13.7051 13.6211 12.25 15.0762 12.25 16.8711C12.25 18.666 13.7051 20.1211 15.5 20.1211ZM21.5 11.7044C22.3285 11.7044 23 11.0329 23 10.2044C23 9.37601 22.3285 8.70444 21.5 8.70444C20.6716 8.70444 20 9.37601 20 10.2044C20 11.0329 20.6716 11.7044 21.5 11.7044Z"/>
+                      </mask>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 13.3711C5.00003 9.59986 5.00003 7.71424 6.1716 6.54267C7.34318 5.37109 9.22879 5.37109 13 5.37109H18.3334C22.1046 5.37109 23.9902 5.37109 25.1618 6.54267C26.3334 7.71424 26.3334 9.59986 26.3334 13.3711V18.7044C26.3334 22.4757 26.3334 24.3613 25.1618 25.5329C23.9902 26.7044 22.1046 26.7044 18.3334 26.7044H13C9.2288 26.7044 7.34318 26.7044 6.1716 25.5329C5.00003 24.3613 5.00003 22.4757 5.00003 18.7044V13.3711ZM22 16.8711C22 20.4609 19.0899 23.3711 15.5 23.3711C11.9102 23.3711 9.00003 20.4609 9.00003 16.8711C9.00003 13.2812 11.9102 10.3711 15.5 10.3711C19.0899 10.3711 22 13.2812 22 16.8711ZM15.5 20.1211C17.295 20.1211 18.75 18.666 18.75 16.8711C18.75 15.0762 17.295 13.6211 15.5 13.6211C13.7051 13.6211 12.25 15.0762 12.25 16.8711C12.25 18.666 13.7051 20.1211 15.5 20.1211ZM21.5 11.7044C22.3285 11.7044 23 11.0329 23 10.2044C23 9.37601 22.3285 8.70444 21.5 8.70444C20.6716 8.70444 20 9.37601 20 10.2044C20 11.0329 20.6716 11.7044 21.5 11.7044Z" fill="white"/>
+                      <path d="M25.1618 6.54267L23.7476 7.95688L23.7476 7.95688L25.1618 6.54267ZM25.1618 25.5329L23.7476 24.1186L23.7476 24.1186L25.1618 25.5329ZM6.1716 25.5329L7.58582 24.1186L7.58582 24.1186L6.1716 25.5329ZM4.75739 5.12845C3.73807 6.14778 3.34058 7.40448 3.16431 8.71551C2.99578 9.96901 3.00003 11.542 3.00003 13.3711H7.00003C7.00003 11.4289 7.00428 10.1735 7.12864 9.2485C7.24527 8.38102 7.43357 8.10913 7.58582 7.95688L4.75739 5.12845ZM13 3.37109C11.171 3.37109 9.59795 3.36685 8.34445 3.53537C7.03342 3.71164 5.77671 4.10913 4.75739 5.12845L7.58582 7.95688C7.73807 7.80463 8.00996 7.61634 8.87744 7.49971C9.80245 7.37534 11.0579 7.37109 13 7.37109V3.37109ZM18.3334 3.37109H13V7.37109H18.3334V3.37109ZM26.576 5.12845C25.5567 4.10913 24.3 3.71164 22.9889 3.53537C21.7354 3.36685 20.1624 3.37109 18.3334 3.37109V7.37109C20.2755 7.37109 21.5309 7.37534 22.456 7.49971C23.3234 7.61634 23.5953 7.80463 23.7476 7.95688L26.576 5.12845ZM28.3334 13.3711C28.3334 11.542 28.3376 9.96901 28.1691 8.71551C27.9928 7.40448 27.5953 6.14778 26.576 5.12845L23.7476 7.95688C23.8998 8.10913 24.0881 8.38102 24.2048 9.2485C24.3291 10.1735 24.3334 11.4289 24.3334 13.3711H28.3334ZM28.3334 18.7044V13.3711H24.3334V18.7044H28.3334ZM26.576 26.9471C27.5953 25.9277 27.9928 24.671 28.1691 23.36C28.3376 22.1065 28.3334 20.5335 28.3334 18.7044H24.3334C24.3334 20.6466 24.3291 21.902 24.2048 22.827C24.0881 23.6945 23.8998 23.9664 23.7476 24.1186L26.576 26.9471ZM18.3334 28.7044C20.1624 28.7044 21.7354 28.7087 22.9889 28.5401C24.3 28.3639 25.5567 27.9664 26.576 26.9471L23.7476 24.1186C23.5953 24.2709 23.3234 24.4592 22.456 24.5758C21.5309 24.7002 20.2755 24.7044 18.3334 24.7044V28.7044ZM13 28.7044H18.3334V24.7044H13V28.7044ZM4.75739 26.9471C5.77671 27.9664 7.03342 28.3639 8.34445 28.5401C9.59795 28.7087 11.171 28.7044 13 28.7044V24.7044C11.0579 24.7044 9.80245 24.7002 8.87744 24.5758C8.00996 24.4592 7.73807 24.2709 7.58582 24.1186L4.75739 26.9471ZM3.00003 18.7044C3.00003 20.5335 2.99578 22.1065 3.16431 23.36C3.34058 24.671 3.73807 25.9277 4.75739 26.9471L7.58582 24.1186C7.43357 23.9664 7.24527 23.6945 7.12864 22.827C7.00428 21.902 7.00003 20.6466 7.00003 18.7044H3.00003ZM3.00003 13.3711V18.7044H7.00003V13.3711H3.00003ZM15.5 25.3711C20.1945 25.3711 24 21.5655 24 16.8711H20C20 19.3564 17.9853 21.3711 15.5 21.3711V25.3711ZM7.00003 16.8711C7.00003 21.5655 10.8056 25.3711 15.5 25.3711V21.3711C13.0147 21.3711 11 19.3564 11 16.8711H7.00003ZM15.5 8.37109C10.8056 8.37109 7.00003 12.1767 7.00003 16.8711H11C11 14.3858 13.0147 12.3711 15.5 12.3711V8.37109ZM24 16.8711C24 12.1767 20.1945 8.37109 15.5 8.37109V12.3711C17.9853 12.3711 20 14.3858 20 16.8711H24ZM16.75 16.8711C16.75 17.5615 16.1904 18.1211 15.5 18.1211V22.1211C18.3995 22.1211 20.75 19.7706 20.75 16.8711H16.75ZM15.5 15.6211C16.1904 15.6211 16.75 16.1807 16.75 16.8711H20.75C20.75 13.9716 18.3995 11.6211 15.5 11.6211V15.6211ZM14.25 16.8711C14.25 16.1807 14.8097 15.6211 15.5 15.6211V11.6211C12.6005 11.6211 10.25 13.9716 10.25 16.8711H14.25ZM15.5 18.1211C14.8097 18.1211 14.25 17.5615 14.25 16.8711H10.25C10.25 19.7706 12.6005 22.1211 15.5 22.1211V18.1211ZM21 10.2044C21 9.92829 21.2239 9.70444 21.5 9.70444V13.7044C23.433 13.7044 25 12.1374 25 10.2044H21ZM21.5 10.7044C21.2239 10.7044 21 10.4806 21 10.2044H25C25 8.27144 23.433 6.70444 21.5 6.70444V10.7044ZM22 10.2044C22 10.4806 21.7762 10.7044 21.5 10.7044V6.70444C19.567 6.70444 18 8.27144 18 10.2044H22ZM21.5 9.70444C21.7762 9.70444 22 9.9283 22 10.2044H18C18 12.1374 19.567 13.7044 21.5 13.7044V9.70444Z" fill="white" mask="url(#path-1-inside-1_1_6973)"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="social__actions">
+                <a href="#" class="btn">Написать нам</a>
+              </div>
+            </div>
+          </div>
+          <div class="page-footer__copyright">
+            <p>&copy; 2023 - твойрозовый.рф</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
