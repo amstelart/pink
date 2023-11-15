@@ -89,7 +89,10 @@
     "la-profile": [],
     "page-back-link": [],
     "profile-card": [],
-    "profile-board": []
+    "profile-board": [],
+    "profile-product": [],
+    "subscribe-box": [],
+    "product-buy": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

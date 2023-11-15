@@ -121,22 +121,43 @@
   }
 
   &__main-part {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
 
   &__title {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 32px;
+    line-height: 1.1;
     font-weight: 600;
-    margin: 16px 0 10px;
+    margin: 0 0 10px 0;
   }
 
   &__article-num {
-    font-size: 10px;
-    line-height: 12px;
-    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 600;
     margin-top: 0;
     margin-bottom: 16px;
+  }
+
+  &__available {
+    @include row;
+  }
+
+  &__available-col {
+    @include col();
+    @include col(lg, 6);
+
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__available-item {
+    margin-bottom: 14px;
+
+    svg {
+      vertical-align: middle;
+      margin-left: 4px;
+    }
   }
 
   &__size {

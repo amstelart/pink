@@ -1,0 +1,78 @@
+// В этом файле должны быть стили для БЭМ-блока product-buy, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.product-buy {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  align-items: flex-start;
+
+  &__col {
+    flex-basis: 50%;
+    max-width: 50%;
+
+    &.col-price {}
+    &.col-actions {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__btn {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 16px 14px;
+    border-radius: 30px;
+  }
+
+  &__favorites {
+    margin-left: 30px;
+    padding: 0;
+    background: transparent;
+    border: none;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    line-height: 1.1;
+    margin: 15px 0;
+
+    .current-price {
+      font-size: 30px;
+      font-weight: 600;
+      color: $color-main;
+      white-space: nowrap;
+      margin-right: 14px;
+    }
+    .old-price {
+      font-size: 20px;
+      font-weight: 400;
+      color: #B2A8B5;
+    }
+  }
+
+  &__price-info-delivery {
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+
+    svg {
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+  }
+
+  &__price-info-bonuses {
+    font-size: 14px;
+    font-weight: 400;
+    color: #F178B6;
+  }
+}

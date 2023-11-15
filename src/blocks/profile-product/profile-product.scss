@@ -1,0 +1,49 @@
+// В этом файле должны быть стили для БЭМ-блока profile-product, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.profile-product {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+
+  &__image {
+    flex-shrink: 0;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__body {
+    padding: 0 16px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+
+  &__quantity {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+
+  &__amount {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

@@ -6,4 +6,231 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &--box {
+    border-radius: 15px;
+    background:#FFF;
+    box-shadow: 0px 4px 30px 4px rgba(74, 74, 74, 0.25);
+    padding: 40px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    display: flex;
+    font-size: 16px;
+    line-height: 1.2;
+    border-bottom: 1px solid #ECECEC;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+
+    b {
+      font-weight: 600;
+    }
+  }
+
+  &__item-num {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  &__item-num-value {
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  &__item-num-date {
+
+  }
+  &__item-status {
+    flex-basis: 30%;
+    max-width: 30%;
+  }
+  &__item-cost {
+    flex-basis: 25%;
+    max-width: 25%;
+    text-align: center;
+  }
+  &__item-cost-value {
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+  }
+  &__item-more {
+    flex-basis: 20%;
+    max-width: 20%;
+
+    .btn {
+      margin: 8px 0;
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+
+  &__item-num,
+  &__item-status,
+  &__item-cost {
+    padding-right: 20px;
+  }
+
+  &__item-status-value {
+    margin-bottom: 12px;
+  }
+
+  &__item-status-date {
+    b {
+      display: block;
+    }
+  }
+
+  &__payment {
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__payment-amount {
+    flex-basis: 25%;
+    max-width: 25%;
+    padding-right: 25px;
+  }
+
+  &__payment-amount-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  &__payment-amount-num {
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  &__payment-method {
+    flex-grow: 1;
+    padding-right: 25px;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-end;
+
+    b {
+      font-weight: 600;
+    }
+  }
+
+  &__payment-actions {
+    flex-basis: 20%;
+    max-width: 20%;
+
+    .btn {
+      width: 100%;
+      margin: 8px 0;
+    }
+  }
+
+  &__products {
+
+  }
+
+  &__products-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  &__products-row {
+    @include row;
+  }
+
+  &__products-item {
+    @include col();
+    @include col(lg, 6);
+  }
+
+  &__bonuses-amount {
+    font-size: 14px;
+    font-weight: 600;
+    color: $color-main;
+    margin-bottom: 40px;
+  }
+
+  &__history-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__history-table {
+    border: none;
+    max-width: 590px;
+
+    td, th {
+      padding: 0.4em 1.4em;
+      vertical-align: middle;
+      border: none;
+      text-align: center;
+
+      &:not(:first-child) {
+        border: none;
+      }
+
+      span {
+        position: relative;
+      }
+    }
+
+    tr:nth-child(odd) {
+      td {
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #FFE2F0;
+        }
+
+        &:first-child {
+          &:before {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+          }
+        }
+        &:last-child {
+          &:before {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+        }
+      }
+      
+    }
+  }
+
+  &__settings {
+    &:not(:last-child) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__settings-row {
+    max-width: 595px;
+  }
+
+  &__settings-row {
+    @include row;
+  }
+
+  &__settings-col {
+    @include col();
+    @include col(lg, 6);
+
+    margin-bottom: 15px;
+  }
 }
