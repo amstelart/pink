@@ -1,0 +1,29 @@
+// В этом файле должны быть стили для БЭМ-блока send-reviews, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.send-reviews {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 220px;
+
+    .live-rating {
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
+
+  &__actions {
+    margin-left: 30px;
+  }
+}

@@ -1,5 +1,6 @@
 {
   "blocks": {
+    "star-rating-svg": [],
     "page": [],
     "is-mobile": [],
     "typo": [],
@@ -92,7 +93,8 @@
     "profile-board": [],
     "profile-product": [],
     "subscribe-box": [],
-    "product-buy": []
+    "product-buy": [],
+    "send-reviews": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

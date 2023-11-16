@@ -1,6 +1,34 @@
 // Если на проекте jQuery
 $( document ).ready(function() {
   // code
+  $(".star-rating-svg").starRating({
+    totalStars: 5,
+    strokeWidth: 0,
+    useGradient: false,
+    activeColor: '#A05175',
+    useFullStars: true,
+    starSize: 25,
+    readOnly: true
+  });
+
+  $(".send-rating").starRating({
+    initialRating: 3.5,
+    strokeWidth: 0,
+    useFullStars: false,
+    useGradient: false,
+    activeColor: '#A05175',
+    ratedColor: '#A05175',
+    hoverColor: '#A05175',
+    starSize: 25,
+    disableAfterRate: true,
+    onHover: function(currentIndex, currentRating, $el){
+      $('.live-rating').text(currentIndex);
+    },
+    onLeave: function(currentIndex, currentRating, $el){
+      $('.live-rating').text(currentRating);
+    }
+  });
+
   $('.accordion-group').ariaAccordion({});
 
   $(".product-carousel").owlCarousel({
