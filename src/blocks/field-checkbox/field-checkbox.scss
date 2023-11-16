@@ -120,4 +120,47 @@ $line-height:                 1.375em !default;
   &__help-text {
     @include field-help-text;
   }
+
+  &.color-sample {
+    margin: 0;
+
+    #{$block-name}__name {
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+
+    #{$block-name}__name-text {
+      line-height: 1;
+      width: 30px;
+      height: 30px;
+      background: #ccc;
+      display: block;
+      border-radius: 50%;
+
+      &:after {
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        border-radius: 50%;
+        border: none;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--white {
+      #{$block-name}__name-text {
+        border: 1px solid #B2A8B5;
+
+        &:after {
+          background: #000;
+        }
+      }
+    }
+  }
 }
