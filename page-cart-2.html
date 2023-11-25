@@ -117,7 +117,7 @@
               </div>
               <div class="hcright">
                 <div class="hcright__feedback">
-                  <a href="#" class="btn btn--main">Заказать звонок</a>
+                  <a href="#modal-callback" data-toggle="modal" class="btn btn--main">Заказать звонок</a>
                 </div>
                 <div class="hcright__panels">
                   <div class="user-panel">
@@ -134,7 +134,7 @@
                         </ul>
                       </div>
                     </div>
-                    <a class="user-panel__login" href="#">Войти</a>
+                    <a class="user-panel__login" href="page-login.html">Войти</a>
                   </div>
                   <div class="shop-panel">
                     <a class="shop-panel__btn" href="#">
@@ -155,8 +155,60 @@
                       <div class="added-value"><span>100</span></div>
                     </a>
                   </div>
+                  <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
                 </div>
               </div>
+            </div>
+          </div>
+          <div id="main-nav" class="main-nav" role="navigation">
+            <div class="main-nav__panel">
+              <a href="#" class="main-nav__login">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                  <path d="M12 21H19C20.104 21 21 20.104 21 19V5C21 3.896 20.104 3 19 3H12" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11 16L15 12L11 8" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 12H3" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Войти</span>
+              </a>
+              <nav class="mobile-menu">
+                <ul>
+                  <li class="sub-menu first-level"><a href="#">Каталог<div class="fa fa-caret-down right"></div></a>
+                    <ul>
+                      <li><a href="#">подпункт</a></li>
+                      <li class="sub-menu"><a href="#">подпункт<div class="fa fa-caret-down right"></div></a>
+                        <ul>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">подпункт</a></li>
+                      <li class="sub-menu"><a href="#">подпункт<div class="fa fa-caret-down right"></div></a>
+                        <ul>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">подпункт</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu first-level"><a href="#">Помощь<div class="fa fa-caret-down right"></div></a>
+                    <ul>
+                      <li><a href="#">Доставка</a></li>
+                      <li><a href="#">Оплата</a></li>
+                      <li><a href="#">Гарантии</a></li>
+                      <li><a href="#">Корпоративным клиентам</a></li>
+                      <li><a href="#">Обработка персональных данных</a></li>
+                      <li><a href="#">Публичная оферта</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -192,16 +244,6 @@
               <div class="dropdown hdelivery-select-city">
                 <a id="select-city" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Челябинск</a>
                 <div class="dropdown__menu" aria-labelledby="select-city">
-                  Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
-                  <hr>
-                  <form action>
-                    <input type="text">
-                    <select>
-                      <option>Название пункта</option>
-                    </select>
-                    <textarea rows="3"></textarea>
-                    <button class="btn">Отправить эту форму</button>
-                  </form>
                 </div>
               </div>
             </div>
@@ -896,7 +938,7 @@
                       </div>
                     </div>
                     <div class="form-order__actions">
-                      <a href="#" class="btn btn--main">Оплатить</a>
+                      <!-- <a href="#" class="btn btn--main">Оплатить</a> -->
                       <div class="field-checkbox">
                         <label class="field-checkbox__name">
                           <input class="field-checkbox__input" type="checkbox" id name checked>
@@ -936,7 +978,7 @@
                         <span>Итого</span>
                         <span>3163 ₽</span>
                       </div>
-                      <!-- <a href="#" class="btn btn--main cart-order__buy-btn">Оформить заказ</a> -->
+                      <a href="#" class="btn btn--main cart-order__buy-btn">Оплатить</a>
                     </div>
                   </div>
                 </div>

@@ -117,7 +117,7 @@
               </div>
               <div class="hcright">
                 <div class="hcright__feedback">
-                  <a href="#" class="btn btn--main">Заказать звонок</a>
+                  <a href="#modal-callback" data-toggle="modal" class="btn btn--main">Заказать звонок</a>
                 </div>
                 <div class="hcright__panels">
                   <div class="user-panel">
@@ -134,7 +134,7 @@
                         </ul>
                       </div>
                     </div>
-                    <a class="user-panel__login" href="#">Войти</a>
+                    <a class="user-panel__login" href="page-login.html">Войти</a>
                   </div>
                   <div class="shop-panel">
                     <a class="shop-panel__btn" href="#">
@@ -155,8 +155,60 @@
                       <div class="added-value"><span>100</span></div>
                     </a>
                   </div>
+                  <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
                 </div>
               </div>
+            </div>
+          </div>
+          <div id="main-nav" class="main-nav" role="navigation">
+            <div class="main-nav__panel">
+              <a href="#" class="main-nav__login">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                  <path d="M12 21H19C20.104 21 21 20.104 21 19V5C21 3.896 20.104 3 19 3H12" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11 16L15 12L11 8" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 12H3" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Войти</span>
+              </a>
+              <nav class="mobile-menu">
+                <ul>
+                  <li class="sub-menu first-level"><a href="#">Каталог<div class="fa fa-caret-down right"></div></a>
+                    <ul>
+                      <li><a href="#">подпункт</a></li>
+                      <li class="sub-menu"><a href="#">подпункт<div class="fa fa-caret-down right"></div></a>
+                        <ul>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">подпункт</a></li>
+                      <li class="sub-menu"><a href="#">подпункт<div class="fa fa-caret-down right"></div></a>
+                        <ul>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">подпункт</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu first-level"><a href="#">Помощь<div class="fa fa-caret-down right"></div></a>
+                    <ul>
+                      <li><a href="#">Доставка</a></li>
+                      <li><a href="#">Оплата</a></li>
+                      <li><a href="#">Гарантии</a></li>
+                      <li><a href="#">Корпоративным клиентам</a></li>
+                      <li><a href="#">Обработка персональных данных</a></li>
+                      <li><a href="#">Публичная оферта</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -192,16 +244,6 @@
               <div class="dropdown hdelivery-select-city">
                 <a id="select-city" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Челябинск</a>
                 <div class="dropdown__menu" aria-labelledby="select-city">
-                  Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
-                  <hr>
-                  <form action>
-                    <input type="text">
-                    <select>
-                      <option>Название пункта</option>
-                    </select>
-                    <textarea rows="3"></textarea>
-                    <button class="btn">Отправить эту форму</button>
-                  </form>
                 </div>
               </div>
             </div>
@@ -725,7 +767,7 @@
                         </div>
                         <div class="cart-list__card-body">
                           <div class="cart-list__card-body-top">
-                            <div class="cart-list__card-part">
+                            <div class="cart-list__card-part part-name">
                               <div class="cart-list__card-title">Букет роз «Откровение»</div>
                               <div class="cart-list__card-sizer">
                                 <span>Размер</span>
@@ -741,7 +783,16 @@
                                   40 см</span>
                               </div>
                             </div>
-                            <div class="cart-list__card-part">
+                            <div class="cart-list__card-part part-field-num">
+                              <div class="field-num">
+                                <span class="field-num__input-wrap">
+                                  <span class="field-num__input-and-btns">
+                                    <button class="field-num__btn field-num__btn--minus" type="button">-</button>
+                                    <button class="field-num__btn field-num__btn--plus" type="button">+</button>
+                                    <input class="field-num__input" type="number" value="1" name="quantity" max="100" min="1" step="1">
+                                  </span>
+                                </span>
+                              </div>
                             </div>
                             <div class="cart-list__card-part right-text">
                                <div class="cart-list__card-cost"><span>3280 ₽</span></div>
@@ -768,10 +819,19 @@
                         </div>
                         <div class="cart-list__card-body">
                           <div class="cart-list__card-body-top">
-                            <div class="cart-list__card-part">
+                            <div class="cart-list__card-part part-name">
                               <div class="cart-list__card-title">Букет роз «Откровение»</div>
                             </div>
-                            <div class="cart-list__card-part">
+                            <div class="cart-list__card-part part-field-num">
+                              <div class="field-num">
+                                <span class="field-num__input-wrap">
+                                  <span class="field-num__input-and-btns">
+                                    <button class="field-num__btn field-num__btn--minus" type="button">-</button>
+                                    <button class="field-num__btn field-num__btn--plus" type="button">+</button>
+                                    <input class="field-num__input" type="number" value="1" name="quantity" max="100" min="1" step="1">
+                                  </span>
+                                </span>
+                              </div>
                             </div>
                             <div class="cart-list__card-part right-text">
                                <div class="cart-list__card-cost"><span>3280 ₽</span></div>
@@ -789,6 +849,9 @@
                             </a>
                           </div>
                         </div>
+                      </div>
+                      <div class="cart-list__card-alert">
+                        Товар является дополнением и доставляется только с букетом цветов
                       </div>
                     </div>
                     <div class="cart-list__item no-image">
@@ -831,6 +894,17 @@
                   </div>
                   <div class="cart-dop">
                     <div class="cart-dop__title">Также вы можете добавить к букету</div>
+                    <div class="cart-dop__nav">
+                      <div class="cart-dop__nav__item">
+                        <a href="#" class="btn btn--main-outline">Воздушные шары</a>
+                      </div>
+                      <div class="cart-dop__nav__item active">
+                        <a href="#" class="btn btn--main-outline">Конфеты и торты</a>
+                      </div>
+                      <div class="cart-dop__nav__item">
+                        <a href="#" class="btn btn--main-outline">Мягкие игрушки и открытки</a>
+                      </div>
+                    </div>
                     <div class="owl-carousel cart-dop__carousel">
                       <div class="product-card">
                           <div class="product-card__inner">
@@ -1099,6 +1173,20 @@
                         <div class="cart-order__info-alert">Cтоимость выше, в связи с увеличением цен поставщика</div>
                       </div>
                       <div class="cart-order__part">
+                        <div class="field-toggler field-toggler-bonuses">
+                          <div class="field-toggler__input-wrap">
+                            <label class="field-toggler__name">
+                              <input class="field-toggler__input" type="checkbox" id>
+                              <span class="field-toggler__name-text">Списать бонусы</span>
+                            </label>
+                            <div class="field-toggler__help-text">Доступно для списания 587 бонусов</div>
+                          </div>
+                        </div>
+                        <label class="field-text field-text-bonuses">
+                          <span class="field-text__input-wrap">
+                            <input class="field-text__input" type="text" value="587" id name>
+                          </span>
+                        </label>
                       </div>
                     </div>
                     <div class="cart-order__footer">

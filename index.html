@@ -117,7 +117,7 @@
               </div>
               <div class="hcright">
                 <div class="hcright__feedback">
-                  <a href="#" class="btn btn--main">Заказать звонок</a>
+                  <a href="#modal-callback" data-toggle="modal" class="btn btn--main">Заказать звонок</a>
                 </div>
                 <div class="hcright__panels">
                   <div class="user-panel">
@@ -134,7 +134,7 @@
                         </ul>
                       </div>
                     </div>
-                    <a class="user-panel__login" href="#">Войти</a>
+                    <a class="user-panel__login" href="page-login.html">Войти</a>
                   </div>
                   <div class="shop-panel">
                     <a class="shop-panel__btn" href="#">
@@ -155,8 +155,60 @@
                       <div class="added-value"><span>100</span></div>
                     </a>
                   </div>
+                  <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
                 </div>
               </div>
+            </div>
+          </div>
+          <div id="main-nav" class="main-nav" role="navigation">
+            <div class="main-nav__panel">
+              <a href="#" class="main-nav__login">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                  <path d="M12 21H19C20.104 21 21 20.104 21 19V5C21 3.896 20.104 3 19 3H12" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11 16L15 12L11 8" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 12H3" stroke="#A05175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Войти</span>
+              </a>
+              <nav class="mobile-menu">
+                <ul>
+                  <li class="sub-menu first-level"><a href="#">Каталог<div class="fa fa-caret-down right"></div></a>
+                    <ul>
+                      <li><a href="#">подпункт</a></li>
+                      <li class="sub-menu"><a href="#">подпункт<div class="fa fa-caret-down right"></div></a>
+                        <ul>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">подпункт</a></li>
+                      <li class="sub-menu"><a href="#">подпункт<div class="fa fa-caret-down right"></div></a>
+                        <ul>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                          <li><a href="#">подпункт</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">подпункт</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu first-level"><a href="#">Помощь<div class="fa fa-caret-down right"></div></a>
+                    <ul>
+                      <li><a href="#">Доставка</a></li>
+                      <li><a href="#">Оплата</a></li>
+                      <li><a href="#">Гарантии</a></li>
+                      <li><a href="#">Корпоративным клиентам</a></li>
+                      <li><a href="#">Обработка персональных данных</a></li>
+                      <li><a href="#">Публичная оферта</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -192,16 +244,6 @@
               <div class="dropdown hdelivery-select-city">
                 <a id="select-city" href="#" class="dropdown__toggler" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Челябинск</a>
                 <div class="dropdown__menu" aria-labelledby="select-city">
-                  Выпадает <code>div</code> с произвольным контентом. <a href>Ссылка какая-то</a>.
-                  <hr>
-                  <form action>
-                    <input type="text">
-                    <select>
-                      <option>Название пункта</option>
-                    </select>
-                    <textarea rows="3"></textarea>
-                    <button class="btn">Отправить эту форму</button>
-                  </form>
                 </div>
               </div>
             </div>
@@ -694,163 +736,61 @@
                 </div>
               </div>
               <div class="main-sliders__right">
-                <div class="shadow-box-top"></div>
-                <div class="shadow-box-bottom"></div>
                 <div class="product-action-carousel__header">
                   <h2 class="page-section__title">Товары и акции дня</h2>
                 </div>
                 <div class="owl-carousel product-action-carousel" id="owl-product-action-carousel">
                   <div class="product-action-card__group">
-                    <div class="product-action-card">
-                      <div class="product-action-card__image">
-                        <img src="img/product-action-card-img-01.jpg" alt>
-                        <div class="product-action-card__label hit"><span>Хит продаж</span></div>
-                      </div>
-                      <div class="product-action-card__body">
-                        <div class="product-action-card__body-top">
-                          <div class="product-action-card__name">Букет с альстромериями</div>
-                          <div class="product-action-card__article">#1234</div>
+                    <div class="product-action-card__group-item">
+                      <div class="product-action-card">
+                        <div class="product-action-card__image">
+                          <img src="img/product-action-card-img-01.jpg" alt>
+                          <div class="product-action-card__label hit"><span>Хит продаж</span></div>
                         </div>
-                        <div class="product-action-card__body-bottom">
-                          <div class="product-action-card__price">
-                            <s class="old-price"></s>
-                            <div class="current-price">5&nbsp;730&nbsp;₽</div>
+                        <div class="product-action-card__body">
+                          <div class="product-action-card__body-top">
+                            <div class="product-action-card__name">Букет с альстромериями</div>
+                            <div class="product-action-card__article">#1234</div>
                           </div>
-                          <div class="product-action-card__actions">
-                            <a href="#" class="btn product-action-card__btn">
-                              <svg class="social__icon" width="32" height="32">
-                                <use xlink:href="img/sprite-svg.svg#icon-cart"/>
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product-action-card">
-                      <div class="product-action-card__image">
-                        <img src="img/product-action-card-img-01.jpg" alt>
-                        <div class="product-action-card__label action"><span>Акция</span></div>
-                      </div>
-                      <div class="product-action-card__body">
-                        <div class="product-action-card__body-top">
-                          <div class="product-action-card__name">Букет с альстромериями</div>
-                          <div class="product-action-card__article">#1234</div>
-                        </div>
-                        <div class="product-action-card__body-bottom">
-                          <div class="product-action-card__price">
-                            <s class="old-price">5&nbsp;200</s>
-                            <div class="current-price">5&nbsp;730&nbsp;₽</div>
-                          </div>
-                          <div class="product-action-card__actions">
-                            <a href="#" class="btn product-action-card__btn added">
-                              <svg class="social__icon" width="32" height="32">
-                                <use xlink:href="img/sprite-svg.svg#icon-cart"/>
-                              </svg>
-                            </a>
+                          <div class="product-action-card__body-bottom">
+                            <div class="product-action-card__price">
+                              <s class="old-price"></s>
+                              <div class="current-price">5&nbsp;730&nbsp;₽</div>
+                            </div>
+                            <div class="product-action-card__actions">
+                              <a href="#" class="btn product-action-card__btn">
+                                <svg class="social__icon" width="32" height="32">
+                                  <use xlink:href="img/sprite-svg.svg#icon-cart"/>
+                                </svg>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="product-action-card__group">
-                    <div class="product-action-card">
-                      <div class="product-action-card__image">
-                        <img src="img/product-action-card-img-01.jpg" alt>
-                        <div class="product-action-card__label hit"><span>Хит продаж</span></div>
-                      </div>
-                      <div class="product-action-card__body">
-                        <div class="product-action-card__body-top">
-                          <div class="product-action-card__name">Букет с альстромериями</div>
-                          <div class="product-action-card__article">#1234</div>
+                    <div class="product-action-card__group-item">
+                      <div class="product-action-card">
+                        <div class="product-action-card__image">
+                          <img src="img/product-action-card-img-01.jpg" alt>
+                          <div class="product-action-card__label action"><span>Акция</span></div>
                         </div>
-                        <div class="product-action-card__body-bottom">
-                          <div class="product-action-card__price">
-                            <s class="old-price"></s>
-                            <div class="current-price">5&nbsp;730&nbsp;₽</div>
+                        <div class="product-action-card__body">
+                          <div class="product-action-card__body-top">
+                            <div class="product-action-card__name">Букет с альстромериями</div>
+                            <div class="product-action-card__article">#1234</div>
                           </div>
-                          <div class="product-action-card__actions">
-                            <a href="#" class="btn product-action-card__btn">
-                              <svg class="social__icon" width="32" height="32">
-                                <use xlink:href="img/sprite-svg.svg#icon-cart"/>
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product-action-card">
-                      <div class="product-action-card__image">
-                        <img src="img/product-action-card-img-01.jpg" alt>
-                        <div class="product-action-card__label action"><span>Акция</span></div>
-                      </div>
-                      <div class="product-action-card__body">
-                        <div class="product-action-card__body-top">
-                          <div class="product-action-card__name">Букет с альстромериями</div>
-                          <div class="product-action-card__article">#1234</div>
-                        </div>
-                        <div class="product-action-card__body-bottom">
-                          <div class="product-action-card__price">
-                            <s class="old-price">5&nbsp;200</s>
-                            <div class="current-price">5&nbsp;730&nbsp;₽</div>
-                          </div>
-                          <div class="product-action-card__actions">
-                            <a href="#" class="btn product-action-card__btn added">
-                              <svg class="social__icon" width="32" height="32">
-                                <use xlink:href="img/sprite-svg.svg#icon-cart"/>
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-action-card__group">
-                    <div class="product-action-card">
-                      <div class="product-action-card__image">
-                        <img src="img/product-action-card-img-01.jpg" alt>
-                        <div class="product-action-card__label hit"><span>Хит продаж</span></div>
-                      </div>
-                      <div class="product-action-card__body">
-                        <div class="product-action-card__body-top">
-                          <div class="product-action-card__name">Букет с альстромериями</div>
-                          <div class="product-action-card__article">#1234</div>
-                        </div>
-                        <div class="product-action-card__body-bottom">
-                          <div class="product-action-card__price">
-                            <s class="old-price"></s>
-                            <div class="current-price">5&nbsp;730&nbsp;₽</div>
-                          </div>
-                          <div class="product-action-card__actions">
-                            <a href="#" class="btn product-action-card__btn">
-                              <svg class="social__icon" width="32" height="32">
-                                <use xlink:href="img/sprite-svg.svg#icon-cart"/>
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product-action-card">
-                      <div class="product-action-card__image">
-                        <img src="img/product-action-card-img-01.jpg" alt>
-                        <div class="product-action-card__label action"><span>Акция</span></div>
-                      </div>
-                      <div class="product-action-card__body">
-                        <div class="product-action-card__body-top">
-                          <div class="product-action-card__name">Букет с альстромериями</div>
-                          <div class="product-action-card__article">#1234</div>
-                        </div>
-                        <div class="product-action-card__body-bottom">
-                          <div class="product-action-card__price">
-                            <s class="old-price">5&nbsp;200</s>
-                            <div class="current-price">5&nbsp;730&nbsp;₽</div>
-                          </div>
-                          <div class="product-action-card__actions">
-                            <a href="#" class="btn product-action-card__btn added">
-                              <svg class="social__icon" width="32" height="32">
-                                <use xlink:href="img/sprite-svg.svg#icon-cart"/>
-                              </svg>
-                            </a>
+                          <div class="product-action-card__body-bottom">
+                            <div class="product-action-card__price">
+                              <s class="old-price">5&nbsp;200</s>
+                              <div class="current-price">5&nbsp;730&nbsp;₽</div>
+                            </div>
+                            <div class="product-action-card__actions">
+                              <a href="#" class="btn product-action-card__btn added">
+                                <svg class="social__icon" width="32" height="32">
+                                  <use xlink:href="img/sprite-svg.svg#icon-cart"/>
+                                </svg>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2796,6 +2736,56 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="page-cookie">
+      <div class="page-cookie__inner">
+        <div class="page-cookie__box">
+          <p>Мы используем cookie. Это позволяет нам анализировать взаимодействие посетителей с сайтом и делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.</p>
+          <a href="#" class="btn btn--main">Хорошо</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal-callback" class="modal modal--callback" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <form action class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <img class="modal__logo" src="img/logo.svg" alt>
+          <div class="modal__title">Укажите номер вашего телефона и мы Вам перезвоним в ближайшее время.</div>
+        </div>
+        <div class="modal__body">
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" placeholder="Ваше имя" id name>
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" placeholder="Ваш номер телефона" id name>
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" placeholder="Введите текст с картинки" id name>
+            </span>
+          </label>
+          <div class="field-captcha">
+            <img src="img/captcha.png" alt>
+          </div>
+        </div>
+        <div class="modal__footer">
+          <div class="field-checkbox">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" id name checked>
+              <span class="field-checkbox__name-text">Я согласен с условиями обработки <a href="#">персональных данных</a></span>
+            </label>
+          </div>
+          <div class="modal__actions">
+            <button type="button" class="btn btn--main-outline" data-dismiss="modal">Отправить</button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
   <script src="js/script.min.js"></script>
