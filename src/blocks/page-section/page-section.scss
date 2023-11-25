@@ -9,6 +9,14 @@
   overflow: hidden;
   padding: 20px 0;
 
+  &--header {
+    .breadcrumbs {
+    }
+    .page-title {
+      margin: 0;
+    }
+  }
+
   &--main-sliders {
     padding: 20px 0;
 
@@ -156,28 +164,9 @@
     @include col();
     @include col(xl, 5);
     @include col(lg, 6);
-    position: relative;
 
-    .shadow-box-top {
-      position: absolute;
-      height: 130px;
-      top: 60px;
-      left: 20px;
-      right: 20px;
-      box-shadow: 0px 4px 30px 4px rgba(74, 74, 74, 0.25);
-      background: rgba(74, 74, 74, 0.12);
-      border-radius: 15px;
-    }
-
-    .shadow-box-bottom {
-      position: absolute;
-      height: 130px;
-      bottom: 40px;
-      left: 20px;
-      right: 20px;
-      box-shadow: 0px 4px 30px 4px rgba(74, 74, 74, 0.25);
-      background: rgba(74, 74, 74, 0.12);
-      border-radius: 15px;
+    @media only screen and (max-width: $screen-lg) and (min-width: $screen-md)  {
+      margin-top: 30px;
     }
   }
 }

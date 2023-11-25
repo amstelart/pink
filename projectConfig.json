@@ -94,7 +94,10 @@
     "profile-product": [],
     "subscribe-box": [],
     "product-buy": [],
-    "send-reviews": []
+    "send-reviews": [],
+    "mobile-menu": [],
+    "page-cookie": [],
+    "field-num": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

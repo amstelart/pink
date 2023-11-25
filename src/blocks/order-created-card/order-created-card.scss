@@ -8,6 +8,11 @@
 
   &__header {
     margin-bottom: 60px;
+    text-align: center;
+
+    @media (min-width: $screen-xl) {
+      text-align: left;
+    }
   }
 
   &__title {
@@ -31,8 +36,14 @@
   }
 
   &__timeline {
+    .order-created-steps {
+      margin: auto;
 
-  }
+      @media (min-width: $screen-xl) {
+        margin: 0;
+      }
+    }
+  } 
 }
 
 .order-created-steps {

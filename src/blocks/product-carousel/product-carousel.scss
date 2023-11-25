@@ -42,6 +42,50 @@
 
 }
 
+.product-carousel-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 30px;
+
+  &__item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-lg) {
+      margin-right: 20px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      border-radius: 25px;
+      border-color: #B2A8B5;
+      color: #B2A8B5;
+      font-size: 14px;
+      padding: 6px 15px;
+
+      &:hover,
+      &:focus {
+        background: #B2A8B5;
+        color: #fff;
+      }
+
+      @media (min-width: $screen-lg) {
+        font-size: 16px;
+        padding: 10px 25px;
+      }
+    }
+
+    &.active {
+      .btn {
+        background: #B2A8B5;
+        color: #fff;
+      }
+    }
+  }
+}
+
 .product-carousel-more {
   text-align: center;
   margin-top: 35px;

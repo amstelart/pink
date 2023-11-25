@@ -16,6 +16,15 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    align-items: flex-start;
+
+    .page-cart-steps {
+      display: none;
+
+      @media (min-width: $screen-md) {
+        display: flex;
+      }
+    }
   }
 
   &__box {

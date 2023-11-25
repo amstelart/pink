@@ -105,6 +105,11 @@
       &__panels {
         order: 1;
         margin-bottom: 18px;
+        display: flex;
+
+        @media (min-width: $screen-lg) {
+          display: block;
+        }
 
         .shop-panel {
 

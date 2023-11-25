@@ -10,7 +10,11 @@
     border-radius: 15px;
     background:#FFF;
     box-shadow: 0px 4px 30px 4px rgba(74, 74, 74, 0.25);
-    padding: 40px;
+    padding: 20px;
+
+    @media (min-width: $screen-lg) {
+      padding: 40px;
+    }
   }
 
   &__title {
@@ -27,15 +31,35 @@
     border-bottom: 1px solid #ECECEC;
     margin-bottom: 30px;
     padding-bottom: 30px;
+    flex-direction: column;
 
     b {
       font-weight: 600;
     }
+
+    @media (min-width: $screen-sm) {
+      flex-direction: row;
+    }
+  }
+
+  &__item-group {
+    
+    @media (min-width: $screen-sm) {
+      flex-basis: 50%;
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: $screen-xl) {
+      flex-direction: row;
+      flex-basis: 55%;
+      max-width: 55%;
+    }
   }
 
   &__item-num {
-    flex-basis: 25%;
-    max-width: 25%;
+    flex-grow: 1;
   }
   &__item-num-value {
     font-weight: 600;
@@ -45,13 +69,15 @@
 
   }
   &__item-status {
-    flex-basis: 30%;
-    max-width: 30%;
+    flex-grow: 1;
   }
   &__item-cost {
-    flex-basis: 25%;
-    max-width: 25%;
-    text-align: center;
+
+    @media (min-width: $screen-sm) {
+      flex-basis: 25%;
+      max-width: 25%;
+      text-align: center;
+    }
   }
   &__item-cost-value {
     white-space: nowrap;
@@ -60,11 +86,21 @@
     margin: 15px 0;
   }
   &__item-more {
-    flex-basis: 20%;
-    max-width: 20%;
+    
+    @media (min-width: $screen-sm) {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+
+    @media (min-width: $screen-xl) {
+      flex-basis: 20%;
+      max-width: 20%;
+    }
 
     .btn {
       margin: 8px 0;
+      padding: 6px 8px;
+      border-radius: 25px;
       width: 100%;
       font-size: 14px;
     }
@@ -91,12 +127,20 @@
     border-bottom: 1px solid #ECECEC;
     margin-bottom: 30px;
     padding-bottom: 30px;
+    flex-direction: column;
+
+    @media (min-width: $screen-sm) {
+      flex-direction: row;
+    }
   }
 
   &__payment-amount {
-    flex-basis: 25%;
-    max-width: 25%;
-    padding-right: 25px;
+    
+    @media (min-width: $screen-sm) {
+      flex-basis: 25%;
+      max-width: 25%;
+      padding-right: 25px;
+    }
   }
 
   &__payment-amount-title {
@@ -123,12 +167,25 @@
   }
 
   &__payment-actions {
-    flex-basis: 20%;
-    max-width: 20%;
+    margin-top: 10px;
+    
+    @media (min-width: $screen-sm) {
+      flex-basis: 25%;
+      max-width: 25%;
+      margin-top: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      flex-basis: 20%;
+      max-width: 20%;
+    }
 
     .btn {
-      width: 100%;
       margin: 8px 0;
+      padding: 6px 8px;
+      border-radius: 25px;
+      width: 100%;
+      font-size: 14px;
     }
   }
 
@@ -148,7 +205,12 @@
 
   &__products-item {
     @include col();
-    @include col(lg, 6);
+    @include col(xl, 6);
+    margin-bottom: 15px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 0;
+    }
   }
 
   &__bonuses-amount {
@@ -166,7 +228,10 @@
 
   &__history-table {
     border: none;
-    max-width: 590px;
+    
+    @media (min-width: $screen-xl) {
+      max-width: 590px;
+    }
 
     td, th {
       padding: 0.4em 1.4em;
@@ -220,7 +285,14 @@
   }
 
   &__settings-row {
-    max-width: 595px;
+
+    @media (min-width:$screen-md) {
+      max-width: 670px;
+    }
+
+    @media (min-width:$screen-lg) {
+      max-width: 595px;
+    }
   }
 
   &__settings-row {
@@ -229,8 +301,10 @@
 
   &__settings-col {
     @include col();
-    @include col(lg, 6);
+    @include col(md, 6);
 
-    margin-bottom: 15px;
+    @media (min-width:$screen-md) {
+      margin-bottom: 15px;
+    }
   }
 }

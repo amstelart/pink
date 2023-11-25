@@ -1,6 +1,13 @@
 // Если на проекте jQuery
 $( document ).ready(function() {
-  // code
+
+  // mobile-menu
+  $('.mobile-menu .sub-menu ul').hide();
+  $(".mobile-menu .sub-menu a").click(function () {
+    $(this).parent(".mobile-menu .sub-menu").children("ul").slideToggle("100");
+    $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+  });
+
   $(".star-rating-svg").starRating({
     totalStars: 5,
     strokeWidth: 0,
@@ -130,11 +137,11 @@ $( document ).ready(function() {
         nav: false
       },
       480 : {
-        items: 2,
+        items: 1,
         nav: false
       },
       992 : {
-        items: 3,
+        items: 2,
         nav: false
       },
       1290 : {

@@ -87,4 +87,21 @@
     line-height: 1.1;
     font-weight: 400;
   }
+
+  .field-toggler-bonuses {
+
+    .field-toggler__help-text {
+      font-size: 14px;
+      color: $text-color;
+      padding-bottom: 0.4em;
+    }
+    .field-toggler__name {
+      min-height: 31px;
+    }
+  }
+
+  .field-text-bonuses {
+    max-width: 100px;
+    text-align: center;
+  }
 }

@@ -40,10 +40,18 @@
   }
 
   &__login-main {
-    padding-top: 116px;
+    padding-top: 90px;
+
+    @media (min-width: $screen-lg) {
+      padding-top: 116px;
+    }
 
     .logo {
-      margin-bottom: 60px;
+      margin-bottom: 25px;
+      
+      @media (min-width: $screen-lg) {
+        margin-bottom: 60px;
+      }
     } 
   }
 
@@ -55,6 +63,11 @@
     width: 50%;
     height: 100%;
     overflow: hidden;
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+    }
 
     img {
       object-fit: cover;

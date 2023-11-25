@@ -7,17 +7,29 @@
   $block-name:                &; // #{$block-name}__element
 
   max-width: 490px;
-  margin: 60px 0;
+  margin: 25px 0;
+
+  @media (min-width: $screen-lg) {
+    margin: 60px 0;
+  }
 
   &__header {
-    margin-bottom: 60px;
+    margin-bottom: 25px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 60px;
+    }
   }
   &__body {
-    margin-bottom: 60px;
+    margin-bottom: 25px;
 
     .field-text__help-text {
       margin-top: 10px;
       font-size: 12px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 60px;
     }
   }
   &__footer {

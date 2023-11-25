@@ -29,7 +29,7 @@
           </div>
         </section>
 
-        <section class="page-section page-section--catalog">
+        <section class="page-section">
           <div class="container">
             <div class="catalog">
               <div class="catalog__header">
@@ -43,437 +43,53 @@
                 </div>
               </div>
               <div class="catalog__body">
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
-                <div class="catalog__item product-card">
-                  <div class="product-card__inner">
-                      <div class="product-card__image">
-                          <img src="img/product-card-image-01.jpg" alt="">
-                      </div>
-                      <div class="product-card__body">
-                          <div class="product-card__info">
-                              <div class="product-article">#1234</div>
-                              <div class="product-name">Букет #166</div>
-                          </div>
-                          <a href="#" class="add-favourites">
-                              <svg class="add-favourites__icon" width="19" height="18">
-                                  <use xlink:href="img/sprite-svg.svg#icon-heart"></use>
-                              </svg>
-                          </a>
-                      </div>
-                      <div class="product-card__footer">
-                          <div class="product-card__price">
-                              <s class="old-price"></s>
-                              <div class="current-price">5730&nbsp;₽</div>
-                          </div>
-                          <div class="product-card__actions">
-                              <a href="#" class="btn btn--main-outline">Заказать</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
               </div>
               <div class="catalog__footer">

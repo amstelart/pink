@@ -235,7 +235,7 @@
               <div class="tabs__content-wrapper">
                 <div class="tabs__content-item tabs__content-item--active" id="product-tabs-01" role="tabpanel">
                   <h5>Состав</h5>
-                  <ul>
+                  <ul class="list-unstyled">
                     <li>Роза кустовая пионовидная – 3 шт</li>
                     <li>Альстромерия – 3 шт</li>
                     <li>Озотамнус – 1 шт</li>
@@ -296,6 +296,17 @@
         <section class="page-section page-section--carousel">
           <div class="container">
             <h2 class="page-section__title">Дополнительно к букету</h2>
+            <div class="product-carousel-nav">
+              <div class="product-carousel-nav__item">
+                <a href="#" class="btn btn--main-outline">Воздушные шары</a>
+              </div>
+              <div class="product-carousel-nav__item active">
+                <a href="#" class="btn btn--main-outline">Конфеты и торты</a>
+              </div>
+              <div class="product-carousel-nav__item">
+                <a href="#" class="btn btn--main-outline">Мягкие игрушки и открытки</a>
+              </div>
+            </div>
             <div class="product-carousel-wrap">
               <div class="owl-carousel product-carousel" id="product-carousel-1">
                 @@include('blocks/product-card/product-card.html')
@@ -340,11 +351,100 @@
               <div class="tabs__content-wrapper">
                 <div class="tabs__content-item tabs__content-item--active" id="demo-tab-01" role="tabpanel">
                   <form action="" class="send-reviews">
-                    <a href="#" class="btn btn--main">Оставить отзыв</a>
+                    <div class="send-reviews__rating">
+                      <span class="live-rating">3.5</span>
+                      <span class="send-rating"></span>
+                    </div>
+                    <div class="send-reviews__actions">
+                      <a href="#" class="btn btn--main">Оставить отзыв</a>
+                    </div>
                   </form>
                   <div class="owl-carousel reviews-carousel">
                     <div class="reviews-carousel-card">
-                      <div class="reviews-carousel-card__header"></div>
+                      <div class="reviews-carousel-card__header">
+                        <div class="reviews-carousel-card__rating">
+                          <div class="star-rating-svg" data-rating="4"></div>
+                        </div>
+                        <div class="reviews-carousel-card__date">Авг 2023</div>
+                      </div>
+                      <div class="reviews-carousel-card__caption">
+                        <div class="reviews-carousel-card__title">Сергей</div>
+                        <div class="reviews-carousel-card__text">
+                          <p>Большое спасибо за доставленный заказ - цветы в малой шляпной коробке! Удовольствие получили и дарящий, и даруемая)))</p>
+                        </div>
+                      </div>
+                      <div class="reviews-carousel-card__photos">
+                        <div class="photo-before">
+                          <a href="#" class="photo-before__inner">
+                            <img src="img/reviews-card-before-01.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="photo-after">
+                          <a href="#" class="photo-after__inner">
+                            <img src="img/reviews-card-after-01.jpg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviews-carousel-card">
+                      <div class="reviews-carousel-card__header">
+                        <div class="reviews-carousel-card__rating">
+                          <div class="star-rating-svg" data-rating="5"></div>
+                        </div>
+                        <div class="reviews-carousel-card__date">Июль 2023</div>
+                      </div>
+                      <div class="reviews-carousel-card__caption">
+                        <div class="reviews-carousel-card__title">Сергей</div>
+                        <div class="reviews-carousel-card__text">
+                          <p>Большое спасибо за доставленный заказ - цветы в малой шляпной коробке! Удовольствие получили и дарящий, и даруемая)))</p>
+                        </div>
+                      </div>
+                      <div class="reviews-carousel-card__photos">
+                        <div class="photo-before">
+                          <a href="#" class="photo-before__inner">
+                            <img src="img/reviews-card-before-01.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="photo-after">
+                          <a href="#" class="photo-after__inner">
+                            <img src="img/reviews-card-after-01.jpg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviews-carousel-card">
+                      <div class="reviews-carousel-card__header">
+                        <div class="reviews-carousel-card__rating">
+                          <div class="star-rating-svg" data-rating="3"></div>
+                        </div>
+                        <div class="reviews-carousel-card__date">Июль 2023</div>
+                      </div>
+                      <div class="reviews-carousel-card__caption">
+                        <div class="reviews-carousel-card__title">Сергей</div>
+                        <div class="reviews-carousel-card__text">
+                          <p>Большое спасибо за доставленный заказ - цветы в малой шляпной коробке! Удовольствие получили и дарящий, и даруемая)))</p>
+                        </div>
+                      </div>
+                      <div class="reviews-carousel-card__photos">
+                        <div class="photo-before">
+                          <a href="#" class="photo-before__inner">
+                            <img src="img/reviews-card-before-01.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="photo-after">
+                          <a href="#" class="photo-after__inner">
+                            <img src="img/reviews-card-after-01.jpg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviews-carousel-card">
+                      <div class="reviews-carousel-card__header">
+                        <div class="reviews-carousel-card__rating">
+                          <div class="star-rating-svg" data-rating="3"></div>
+                        </div>
+                        <div class="reviews-carousel-card__date">Июль 2023</div>
+                      </div>
                       <div class="reviews-carousel-card__caption">
                         <div class="reviews-carousel-card__title">Сергей</div>
                         <div class="reviews-carousel-card__text">

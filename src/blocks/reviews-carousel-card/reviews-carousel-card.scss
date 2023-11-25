@@ -51,6 +51,7 @@
 
     .photo-after {
       &__inner {
+
         &:before {
           content: "Фото доставки";
           position: absolute;
@@ -76,7 +77,8 @@
         border-radius: 15px;
         overflow: hidden;
         position: relative;
-        height: 160px;
+        padding-bottom: 120%;
+        color: $text-color;
 
         img {
           object-fit: cover;
