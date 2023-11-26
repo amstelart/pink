@@ -10,34 +10,55 @@
 
   &__sidebar {
     @include col();
-    @include col(xl, 4);
+    @include col(lg, 4);
   }
 
   &__main {
     @include col();
-    @include col(xl, 8);
+    @include col(lg, 8);
   }
 
   &__title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 50px;
+    }
   }
 
   &__contacts-list {
     list-style: none;
     padding: 0;
-    margin: 0 0 40px 0;
-    font-size: 18px;
+    margin: 0 0 30px 0;
+    font-size: 16px;
+
+    @media (min-width: $screen-xl) {
+      margin: 0 0 40px 0;
+      font-size: 18px;
+    }
 
     li {
       position: relative;
-      padding: 4px 0 4px 40px;
-      margin-bottom: 20px;
+      padding: 2px 0 4px 30px;
+      margin-bottom: 10px;
+
+      @media (min-width: $screen-xl) {
+        padding: 4px 0 4px 40px;
+        margin-bottom: 20px;
+      }
 
       svg {
+        width: 20px;
+        height: 21px;
         position: absolute;
         left: 0;
         top: 0;
+
+        @media (min-width: $screen-xl) {
+          width: 24px;
+          height: 25px;
+        }
       }
     }
   }
@@ -66,5 +87,151 @@
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 600;
+  }
+
+  &__feedback-form {
+
+    background: #FFE2F0;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px 0;
+
+    .field-text {
+      margin-bottom: 8px;
+    }
+
+    @media (min-width: $screen-md) {
+      padding: 30px 40px;
+
+      .field-text {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__feedback-form-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  &__feedback-form-row {
+    @include row;
+    
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+  }
+
+  &__feedback-form-col {
+    @include col();
+    @include col(sm, 6);
+    
+    padding: 0 8px !important;
+  }
+
+  &__feedback-form-actions {
+    max-width: 500px;
+    margin: auto;
+
+    .field-checkbox__name {
+      padding-top: 0;
+      padding-left: 45px;
+    }
+
+    .btn {
+      display: block;
+      margin: 20px auto 0 auto;
+    }
+  }
+
+  &__payment {
+    @include row;
+    margin-top: 30px;
+  }
+
+  &__payment-item {
+    @include col();
+    @include col(xs, 6);
+    @include col(sm, 4);
+    @include col(md, 4);
+    @include col(lg, 4);
+    @include col(xl, 2);
+    margin-bottom: 20px;
+  }
+
+  &__payment-card {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ECECEC;
+    text-align: center;
+    height: 100%;
+
+    span {
+      display: block;
+      text-align: center;
+    }
+  }
+
+
+  &__delivery {
+
+  }
+
+  &__delivery-part {
+    margin-bottom: 30px;
+
+    &.part-date {
+      max-width: 360px;
+    }
+  }
+  &__delivery-part-title {
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  &__delivery-price {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  &__delivery-row {
+
+    @include row;
+  }
+
+  &__delivery-col {
+
+    @include col();
+    @include col(sm, 6);
+  }
+
+  &__delivery-card {
+    position: relative;
+    padding-left: 60px;
+
+    svg {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__delivery-timeline {}
+  &__delivery-timeline-nav {
+    .btn {
+      margin-right: 16px;
+      margin-bottom: 10px;
+
+      &.active {
+        background: $color-main;
+        color: #fff;
+      }
+    }
   }
 }

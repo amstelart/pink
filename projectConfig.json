@@ -97,7 +97,8 @@
     "send-reviews": [],
     "mobile-menu": [],
     "page-cookie": [],
-    "field-num": []
+    "field-num": [],
+    "reviews-card": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

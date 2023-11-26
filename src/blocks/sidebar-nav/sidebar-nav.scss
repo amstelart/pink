@@ -19,19 +19,33 @@
   }
 
   &__link {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     text-decoration: none;
     color: currentColor;
     display: block;
-    padding: 16px 20px 16px 64px;
+    padding: 14px 18px 14px 50px;
     border-radius: 15px;
     position: relative;
 
     svg {
+      width: 20px;
+      height: 21px;
       position: absolute;
-      left: 20px;
+      left: 15px;
       top: 12px;
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 18px;
+      padding: 16px 20px 16px 64px;
+
+      svg {
+        width: 24px;
+        height: 25px;
+        left: 20px;
+        top: 12px;
+      }
     }
   }
 }
