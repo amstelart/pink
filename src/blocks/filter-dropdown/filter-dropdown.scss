@@ -264,8 +264,11 @@
   &--size {
     .filter-dropdown__row {
       @include row;
-      max-width: 70%;
-      margin: auto;
+      
+      @media (min-width: $screen-md) {
+        max-width: 70%;
+        margin: auto;
+      }
     }
   
     .filter-dropdown__item {
@@ -277,7 +280,7 @@
   &--color {
     .filter-dropdown__row {
       display: flex;
-
+      flex-wrap: wrap;
     }
     .filter-dropdown__item {
       margin: 5px;

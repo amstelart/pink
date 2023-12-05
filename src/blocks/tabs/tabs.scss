@@ -96,7 +96,11 @@ $field-padding-horizontal:    0.7em !default;
   &--reviews {
 
     .send-reviews {
-      margin-bottom: 45px;
+      margin-bottom: 15px;
+
+      @media (min-width: $screen-md) {
+        margin-bottom: 45px;
+      }
     }
 
     #{$block-name}__links {
@@ -144,7 +148,11 @@ $field-padding-horizontal:    0.7em !default;
 
     #{$block-name}__content-wrapper {
       border: none;
-      padding: 55px 0 30px 0;
+      padding: 25px 0 20px 0;
+
+      @media (min-width: $screen-md) {
+        padding: 55px 0 30px 0;
+      }
     }
   }
 }

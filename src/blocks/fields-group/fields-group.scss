@@ -106,13 +106,30 @@
 
   &--delivery-addr {
 
+    @media (max-width: ($screen-md - 1)) {
+      flex-wrap: wrap;
+      .field-text {
+        min-width: 100%;
+      } 
+    }
+
     .field-text:first-child {
+      margin-bottom: 16px;
       flex-grow: 1;
-      margin-right: 30px;
+
+      @media (min-width: $screen-md) {
+        flex-grow: 1;
+        margin-right: 30px;
+      }
     }
     .field-text:last-child {
-      flex-shrink: 0;
-      max-width: 178px;
+      flex-grow: 1;
+      
+      @media (min-width: $screen-md) {
+        flex-grow: 0;
+        flex-shrink: 0;
+        max-width: 178px;
+      }
     }
     
     .field-text {

@@ -203,6 +203,14 @@ $( document ).ready(function() {
     smartSpeed: 1000,
     slideSpeed: 1000,
     slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+    responsive: {
+      0: {
+        margin: 8,
+      },
+      1199: {
+        margin: 16,
+      }
+    },
     responsiveRefreshRate: 100
   })
     .on("changed.owl.carousel", syncPosition2);

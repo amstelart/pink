@@ -47,11 +47,15 @@
 
   &__add-comments-link {
     display: inline-block;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     color: $color-main;
     line-height: 1.2;
     text-decoration: none;
+
+    @media (min-width: $screen-md) {
+      font-size: 18px;
+    }
 
     span,
     svg {
@@ -102,6 +106,8 @@
 
   &__pm-col {
     @include col();
+    @include col(xs, 6);
+    @include col(md, 4);
     @include col(lg, 4);
 
     margin-bottom: 30px;

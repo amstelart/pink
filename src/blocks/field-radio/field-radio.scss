@@ -119,35 +119,51 @@ $line-height:                 1.375em !default;
   &--delivery {
     display: flex;
 
+    @media (min-width: $screen-lg) {
+      max-width: 400px;
+    }
+
     .field-radio__input-wrap {
       margin-top: 0;
+      max-width: 50%;
+      flex-grow: 1;
       &:first-child {
         margin-right: 16px;
+        max-width: calc(50% - 16px);
       }
     }
 
     .field-radio__name {
       padding: 0;
       margin: 0;
+      display: block;
     }
 
     .field-radio__name-text {
       display: block;
       padding: 0;
       margin: 0;
-      padding: 10px 40px;
+      padding: 10px 15px;
       text-align: center;
-      max-width: 193px;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 400;
       border-radius: 20px;
       background: #fff;
       color: #B2A8B5;
       border: 1px solid#B2A8B5;
 
+      span {
+        display: block;
+      }
+
       &:before,
       &:after {
         display: none;
+      }
+
+      @media (min-width: $screen-md) {
+        font-size: 18px;
+        padding: 10px 40px;
       }
     }
 

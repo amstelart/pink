@@ -17,6 +17,8 @@
     font-weight: 400;
     display: inline-block;
     margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
 
     &:not(:last-child) {
       margin-right: 15px;
@@ -29,6 +31,9 @@
     }
     svg {
       margin-right: 8px;
+      position: absolute;
+      left: 0;
+      top: 0;
     }
 
     @media (min-width: $screen-xl) {
@@ -46,7 +51,7 @@
 
   &__row {
     @include row;
-    
+    position: relative;
     margin-bottom: 20px;
 
     @media (min-width: $screen-xl) {
@@ -56,6 +61,7 @@
 
   &__carousel-col {
     @include col();
+    @include col(md, 6);
     @include col(lg, 7);
     margin-bottom: 20px;
 
@@ -66,6 +72,7 @@
 
   &__main-col {
     @include col();
+    @include col(md, 6);
     @include col(lg, 5);
   }
 
@@ -97,7 +104,7 @@
   &__slide {
     border-radius: 16px;
     overflow: hidden;
-    padding-bottom: 558px;
+    padding-bottom: 360px;
     position: relative;
 
     img {
@@ -109,6 +116,10 @@
       height: 100%;
     }
 
+    @media (min-width: $screen-lg) {
+      padding-bottom: 558px;
+    }
+
     @media (min-width: $screen-xl) {
       padding-bottom: 700px;
     }
@@ -116,11 +127,22 @@
 
   
   &__carousel-thumb {
-    margin-top: 20px;
-    padding: 0 48px;
+    margin-top: 10px;
+    padding: 0;
+
+    @media (min-width: $screen-sm) {
+      padding: 0 48px;
+    }
+    @media (min-width: $screen-lg) {
+      margin-top: 20px;
+    }
 
     .owl-stage-outer {
-      border-radius: 15px;
+      border-radius: 6px;
+
+      @media (min-width: $screen-lg) {
+        border-radius: 15px;
+      }
     }
 
     .owl-item.active.current {
@@ -131,11 +153,11 @@
   }
 
   &__thumbnail {
-    border-radius: 15px;
+    border-radius: 6px;
     overflow: hidden;
     border: 2px solid transparent;
 
-    padding-bottom: 110px;
+    padding-bottom: 80%;
     position: relative;
 
     img {
@@ -145,6 +167,11 @@
       left: 0;
       width: 100%;
       height: 100%;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-bottom: 110px;
+      border-radius: 15px;
     }
 
     @media (min-width: $screen-xl) {
@@ -189,6 +216,8 @@
 
   &__available-col {
     @include col();
+    @include col(xs, 6);
+    @include col(md, 12);
     @include col(lg, 6);
 
     font-size: 16px;
