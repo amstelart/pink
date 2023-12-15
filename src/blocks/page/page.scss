@@ -34,6 +34,16 @@
     flex-shrink: 0;
   }
 
+  &__error {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__error-main {
+
+  }
+
   &__login {
     position: relative;
     min-height: 100vh;

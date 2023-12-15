@@ -88,7 +88,15 @@ h6 {
 
 // .h1,
 h1 {
-  font-size: $font-size--h1;
+  font-size: 18px;
+
+  @media (min-width: $screen-md) {
+    font-size: 22px;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size--h1;
+  }
 }
 
 // .h2,
@@ -240,4 +248,8 @@ pre {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.main-title {
+  margin-top: 0;
 }

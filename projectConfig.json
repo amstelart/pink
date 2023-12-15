@@ -98,7 +98,8 @@
     "mobile-menu": [],
     "page-cookie": [],
     "field-num": [],
-    "reviews-card": []
+    "reviews-card": [],
+    "page-error-box": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
